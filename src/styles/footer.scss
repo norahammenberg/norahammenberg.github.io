@@ -1,0 +1,21 @@
+@import '../App.scss'; 
+
+.footerWrapper {
+    background-color: $primary-light-colour;
+    height: 170px;
+}
+.contactFooter {
+    
+    @include primary-heading-font;
+    font-weight: 100;
+    text-align: center;
+    color: $primary-dark-colour;
+    padding-top: 50px;
+}
+.footerPara {
+    @include primary-heading-font;
+    font-weight: 100;
+    text-align: center;
+    color: $primary-dark-colour;
+    margin-top: -20px;
+}

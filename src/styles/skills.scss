@@ -1,0 +1,60 @@
+@import '../App.scss'; 
+//wrapper
+.skillsWrapper {
+    padding-top: 100px;
+}
+.iconWrapperSkills {
+    margin: 20px 250px;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.iconSingleWrapSkills {
+    margin: 60px;
+    color: $primary-light-colour;
+    cursor: pointer;
+}
+//main header
+.skillsHeader {
+    @include primary-heading-font;
+    color: $primary-light-colour;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+//all mouse over event;
+.skillsPop {
+    @include flex;
+    margin-top: -40px;
+}
+.skillsHTMLPop {
+    padding-left: 22px;
+}
+.skillsCSSPop {
+    padding-left: 26px;
+}
+.skillsReactPop {
+    padding-left: 9px;
+}
+.skillsNPMPop {
+    padding-left: 25px;
+}
+.skillsRespPop {
+    padding-right: 350px;
+}
+
+//keyframes for amnimation.
+
+@keyframes htmlAnmiUp{
+    100% {
+        transform: translateY(-30px);
+        color: #c57d89;
+    }
+    }
+    @keyframes htmlAnmiDown{
+   
+    from {transform: translateY(-30px);
+        color: #c57d89;}
+    to {transform: translateY(0px);}
+    
+}

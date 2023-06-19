@@ -1,6 +1,7 @@
 /*Imorts*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
 * {
     box-sizing: border-box;
 }
@@ -15,12 +16,15 @@ $primary-light-colour: #EDE1AE;
     font-family: 'Oswald', san-serif;
     color: $primary-dark-colour;
     letter-spacing: 3px;
+    
 }
 @mixin primary-paragraph-font {
-    font-family: 'Quattrocento', serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     color: $primary-light-colour;
-    letter-spacing: 1.5px;
-    font-size: 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.5;
 }
 @mixin flex {
     display: flex;
@@ -28,10 +32,14 @@ $primary-light-colour: #EDE1AE;
 @mixin flex-end {
     display: flex;
     justify-content: flex-end;
-    
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: flex-end;
 }
 body {
     background-color: $primary-dark-colour;
+    
 }
 /*Compnents*/
 /*Home*/
@@ -40,4 +48,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 20%;
+}
+
+//media queries
+@media screen and (min-height: 942px) {
+    .wrapper {
+        //padding-bottom: 26%;
+    }
+}
+
+@media screen and (max-width: 1253px) {
+    .wrapper {
+        //padding-bottom: 33%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .wrapper {
+        background-image: url("images/mobilebackground.png");
+        //padding-bottom: 30%;
+        
+    }
+        
 }

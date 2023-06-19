@@ -1,10 +1,15 @@
 @import '../App.scss';
-
+.menu {
+    position: sticky;
+    top: 0;
+    
+}
 .navBar {
     @include flex;
     font-size: 20px;
     text-transform: uppercase; 
-    background-color: $primary-light-colour
+    background-color: $primary-light-colour;
+
 }
 
 .nav {
@@ -13,6 +18,7 @@
     margin: 30px 0 0 0;
     width: 50%;
     padding-right: 30px;
+    padding-bottom: 30px
 }
 li a {
     @include primary-heading-font;
@@ -31,11 +37,33 @@ li a {
 
 .imagesWrapper {
     background-color: $primary-dark-colour;
-   width: 50%;
+    width: 50%;
 }
 .logo {
     margin: 15px 0 15px 25px;
   
 }
 
+//media queries
+@media screen and (max-width: 1253px) {
+    .navBar {
+        font-size: 16px;
+    }
+}
 
+@media screen and (max-width: 1131px) {
+    .navBar {
+        font-size: 14px;
+    }
+    ul.nav {
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 986px) {
+    .imagesWrapper {
+        background-color: $primary-light-colour;
+        width: 50%;
+    }  
+}
+
+//make hamburger meny

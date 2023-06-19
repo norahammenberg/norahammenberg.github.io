@@ -3,8 +3,50 @@
 .aboutWrapper {
     @include flex;
     margin: 60px;
+    padding-top: 140px;
+    margin-bottom: 140px;
+}
+.imagesAboutWrapper {
+    width: 50%;
 }
 .portrait {
+    width: 77%;
     border-radius: 50%;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.textWrapper{
+    width: 50%;
+   
+}
+
+//media queries
+@media screen and (max-width: 1253px) {
+    .portrait {
+        margin-top: 50px;
+    }
+    .textAbout {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1131px) {
+    .portrait {
+        margin-top: 70px;
+        width: 87%;
+        margin-left: 1%;
+    }
+    
+}
+@media screen and (max-width: 986px) {
+    .aboutWrapper {
+        //padding-top: 80px;
+    }
+    .portrait {
+        margin-top: 140px;
+        width: 87%;
+        margin-left: 1%;
+    }
+
+    
 }

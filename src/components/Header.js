@@ -1,4 +1,3 @@
-import { isPropertySignature } from 'typescript';
 import '../styles/header.scss';
 
 function Header(props) {

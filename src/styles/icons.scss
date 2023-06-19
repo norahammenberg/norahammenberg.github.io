@@ -1,0 +1,43 @@
+@import '../App.scss';
+.iconWrapper {
+    @include flex;
+    margin-left: -20px;
+}
+.iconSingleWrap {
+    margin: 20px;
+}
+.cvButton {
+    @include primary-paragraph-font;
+    background-color: $primary-dark-colour;
+    border: solid $primary-light-colour;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow:  #242220 0px -2px 6px 2px inset;
+    cursor: pointer; 
+}
+.iconCvWrap {
+    margin-top: 25px;
+}
+
+//for project page
+.iconProjectRight {
+    @include flex;
+    padding-right: 20px;
+    margin: 20px;
+    justify-content: flex-end;
+}
+.iconProjectLeft {
+    margin-left: -20px;
+}
+.hidden {
+    display: none;
+}
+
+//media queries
+@media screen and (max-width: 1008px) {
+    .cvButton  {
+        padding: 10px;
+        font-size: 14px;
+    }
+  }
+    

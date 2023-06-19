@@ -21,3 +21,45 @@
     margin-top: -60px;
     margin-left: 120px;
 }
+
+
+//media quaries
+@media screen and (max-width: 986px) {
+    .headerOne {
+        font-size: 34px;
+        margin-left: -125px;
+    }
+    .headerTwo {
+        font-size: 34px;
+        margin-top: -30px;
+        margin-left: 80px;
+        padding-bottom: 60px;
+    }
+        
+}
+@media screen and (max-width: 900px) {
+    .headerLightColour {
+        color: $primary-dark-colour;
+    }
+    .headDarkColour {
+        padding-left: 10px;
+       
+        background-color: rgba(255, 255, 255, 0.75);
+         
+        
+    }
+    .headerOne {
+        
+        margin-left: -130px; 
+        padding-right: 10px;
+    }
+    .headerTwo {
+        
+        margin-top: -30px;
+        margin-left: 70px;
+        padding-top: 7px;
+        padding-right: 12px;
+        
+    }
+        
+}

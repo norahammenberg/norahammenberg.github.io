@@ -3,4 +3,7 @@
 .aboutHeader {
     @include primary-heading-font;
     color: $primary-light-colour;
+    font-weight: 100;
+    
+    
 }

@@ -1,15 +1,76 @@
 @import '../App.scss';
 .arrowWrapper {
-    text-align: center;
+    position: sticky;
+    padding-top: 10px;
+    top: 90px;
+    display: flex;
+    justify-content: flex-end;
 }
 .arrowButton {
     background-color: $primary-dark-colour;
-    border: none;
+    border: none; 
+    background-color: rgb(0, 0, 0, 0);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around; 
+  }
+  .arrow {
+   margin-left: 4px;
   }
   
   .arrow::after {
-    content: '↓';
+    content: "\2191";
     font-size: 40px;
-    margin-left: 4px;
     color: $primary-light-colour;
+    cursor: pointer;
   }
+  /*.arrowHidden::after {
+    content: "\007C";
+    font-size: 40px;
+    color: $primary-light-colour;
+    cursor: pointer;
+  }
+  .arrowHidden {
+    margin-top: -40px;
+    opacity: 0;
+    margin-left: 3.3px;
+    
+  }*/
+  
+  //keyframes for amnimation.
+  @keyframes arrowAnimMouseOver {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes arrowAnimMouseLeave {
+    from {opacity: 1;}
+    to {opacity: 0;} 
+  }
+  @keyframes arrowAnmiUp{
+      100% {
+      transform: translateY(-10px);}
+      from {color: rgb(237, 225, 174, 0.4);}
+      to {color: $primary-light-colour;}
+  }
+  @keyframes arrowAnmiDown{
+    100% {
+    transform: translateY(10px);
+  }
+}
+
+
+//media queries
+@media screen and (max-width: 1300px) {
+  .arrowWrapper {
+    padding-top: 30px;
+  }  
+}
+
+@media screen and (max-width: 1131px) {
+
+  
+}
+@media screen and (max-width: 986px) {
+  
+}
