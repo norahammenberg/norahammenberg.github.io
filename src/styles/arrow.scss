@@ -1,0 +1,15 @@
+@import '../App.scss';
+.arrowWrapper {
+    text-align: center;
+}
+.arrowButton {
+    background-color: $primary-dark-colour;
+    border: none;
+  }
+  
+  .arrow::after {
+    content: '↓';
+    font-size: 40px;
+    margin-left: 4px;
+    color: $primary-light-colour;
+  }

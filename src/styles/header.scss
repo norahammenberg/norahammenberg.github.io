@@ -1,0 +1,6 @@
+@import '../App.scss';
+
+.aboutHeader {
+    @include primary-heading-font;
+    color: $primary-light-colour;
+}

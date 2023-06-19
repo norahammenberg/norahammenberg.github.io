@@ -1,0 +1,43 @@
+/*Imorts*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+/*Varibles*/
+
+$primary-dark-colour: #2D2C2B;
+$primary-light-colour: #EDE1AE;
+
+/*Mixins*/
+@mixin primary-heading-font {
+    font-family: 'Oswald', san-serif;
+    color: $primary-dark-colour;
+    letter-spacing: 3px;
+}
+@mixin primary-paragraph-font {
+    font-family: 'Quattrocento', serif;
+    color: $primary-light-colour;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+@mixin flex {
+    display: flex;
+}
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+body {
+    background-color: $primary-dark-colour;
+}
+/*Compnents*/
+/*Home*/
+.wrapper {
+    background-image: url("images/testigen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20%;
+}

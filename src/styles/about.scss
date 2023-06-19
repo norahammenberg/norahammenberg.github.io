@@ -1,0 +1,10 @@
+@import '../App.scss';
+
+.aboutWrapper {
+    @include flex;
+    margin: 60px;
+}
+.portrait {
+    border-radius: 50%;
+    margin-right: 50px;
+}

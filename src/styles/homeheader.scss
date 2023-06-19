@@ -1,0 +1,23 @@
+@import '../App.scss';
+
+.alignHeader {
+    @include flex;
+    justify-content: center
+}
+.headerOne {
+    @include primary-heading-font;
+    font-weight: 100;
+    font-size: 54px;
+    margin-left: -189px;
+    margin-top: 150px;
+}
+.headerLightColour {
+    color: $primary-light-colour;
+}
+.headerTwo {
+    @include primary-heading-font;
+    font-size: 54px;
+    font-weight: 100;
+    margin-top: -60px;
+    margin-left: 120px;
+}
