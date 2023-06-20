@@ -34,10 +34,48 @@
 }
 
 //media queries
+@media screen and (max-width: 1253px) {
+    
+}
+@media screen and (max-width: 1131px) {
+    
+    
+}
 @media screen and (max-width: 1008px) {
     .cvButton  {
         padding: 10px;
-        font-size: 14px;
+        font-size: 12px;
     }
   }
     
+@media screen and (max-width: 927px) {
+    .iconSingleWrap {
+        margin: 10px;
+    }
+    .iconCvWrap {
+        margin-top: 18px;
+    }
+    
+}
+@media screen and (max-width: 832px) {
+    .iconWrapper {
+        justify-content:  center;
+        padding: 20px 0 40px 0;
+    }
+}
+@media screen and (max-width: 542px) {
+    .iconCvWrap {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 832px) {
+    .iconProjectRight{
+        justify-content: center;
+    }
+    .iconProjectLeft {
+        text-align: center;
+    }
+    
+}

@@ -2,7 +2,7 @@
 
 //Wrapps
 .projectWrapper {
-    padding-top: 100px;
+    padding-top: 40px;
 }
 .theProjectWrapper {
     @include flex;
@@ -26,9 +26,16 @@
     padding-right: 20px;
 }
 .projectImageDuoWrapper {
-    @include flex;
+    //@include flex;
     width: 50%;
     padding-left: 20px;
+    padding-right: 40px;
+}
+.meanwoodValleyImage {
+    width: 50%;
+}
+.meanwoodValleyrider {
+    width: 50%;
 }
 .reactImage {
     width: 100%; 
@@ -38,7 +45,6 @@
 .projectTextBoxHeader {
     @include primary-heading-font;
     color: $primary-light-colour;
-    
     padding-right: 40px;
     font-weight: 100;
     letter-spacing: 6px;
@@ -58,4 +64,81 @@
 }
 .duoTextWrapper{
     margin-top: 50px;
+}
+
+
+//media queries
+@media screen and (max-width: 1253px) {
+    .projectImageWrapper {
+        padding-top: 30px;
+    }
+    .duoTextWrapper {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 1131px) {
+    .projectImageWrapper {
+        padding-top: 60px;
+    }
+    .duoTextWrapper {
+        margin-top: -40px;
+    }
+    
+}
+@media screen and (max-width: 986px) {
+    .textProject {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 832px) {
+    .theProjectWrapper {
+        flex-direction: column;
+    }
+    .projectImageDuoWrapper {
+        width: 100%;
+       
+    }
+    .meanwoodValleyImage {
+        width: 50%;
+    }
+    .meanwoodValleyrider {
+        width: 50%;
+    }
+    .projectImageWrapper {
+        width: 100%;
+    }
+    .projectTextWrapper {
+        width: 100%;
+        //padding-left: 20px;
+    }
+    .duoTextWrapper {
+        margin-top: 0;
+    }
+    .projectImageWrapper {
+        padding-top: 0;
+    }
+    .textProjectLeft {
+        text-align: center;
+        padding-right: 0;
+    }
+    .duoTextWrapper {
+        text-align: center;
+        padding-right: 0;
+    }
+    .projectImageDuoWrapper {
+        order: 2;
+    }
+    .theProjectWrapper {
+        padding: 40px;
+    }
+    .projectTextBoxHeader {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 542px) {
+    .theProjectWrapper {
+        padding: 1px 40px;
+    }
+    
 }

@@ -6,6 +6,7 @@ import '../styles/project.scss';
 import Image from "../components/Image";
 import Textbox from "../components/Textbox";
 import Icons from "../components/Icons";
+import Menu from "../components/Menu";
 
 //<a href="https://www.flaticon.com/free-icons/iphone" title="iphone icons">Iphone icons created by amoghdesign - Flaticon</a>
 function Projects() {
@@ -22,104 +23,79 @@ function Projects() {
     'While building the application I learned how to use React.js, RESTful API '
     ]
     return(
-        <div className="projectWrapper">
-            <Header className='projectHeader' text='MY PROJECTS' />
-            {/**First project */}
-            <div className="theProjectWrapper">
-                <div className="projectTextWrapper">
-                    <Textbox 
-                        className='textProject textProjectLeft'
-                        headerClassName='projectTextBoxHeader textProjectLeft'
-                        header='Currency Converter' 
-                        text={textReact} 
-                    />
-                    <Icons 
-                        size='35'
-                        classNameGitHub='iconProjectRight'
-                        classNameLinkedin='hidden'
-                        classNameMail='hidden'
-                        classNameHTML='hidden'
-                        classNameCSS='hidden'
-                        classNameJS='hidden'
-                        classNameReact='hidden'
-                        classNameNPM='hidden'
-                        classNameTerm='hidden'
-                        classNameSass='hidden'
-                        classNameResp='hidden'
-                        classNameCV='hidden'
-                        hrefGithub='https://github.com/norahammenberg/currency-converter'
-                    />
+        <div>
+            <Menu />
+        
+            <div className="projectWrapper">
+                
+                <Header className='projectHeader' text='MY PROJECTS' />
+                {/**First project */}
+                <div className="theProjectWrapper">
+                    <div className="projectTextWrapper">
+                        <Textbox 
+                            className='textProject textProjectLeft'
+                            headerClassName='projectTextBoxHeader textProjectLeft'
+                            header='Currency Converter' 
+                            text={textReact} 
+                        />
+                        <Icons 
+                            size='35'
+                            classNameGitHub='iconProjectRight'
+                            classNameLinkedin='hidden'
+                            classNameMail='hidden'
+                            classNameHTML='hidden'
+                            classNameCSS='hidden'
+                            classNameJS='hidden'
+                            classNameReact='hidden'
+                            classNameNPM='hidden'
+                            classNameTerm='hidden'
+                            classNameSass='hidden'
+                            classNameResp='hidden'
+                            classNameCV='hidden'
+                            hrefGithub='https://github.com/norahammenberg/currency-converter'
+                        />
+                    </div>
+
+                    <div className="projectImageWrapper">
+                        <Image className='reactImage' src={currencyConverter} alt='Currency converter application' />
+                    </div>
                 </div>
 
-                <div className="projectImageWrapper">
-                    <Image className='reactImage' src={currencyConverter} alt='Currency converter application' />
+                {/**Second project */}
+                <div className="theProjectWrapper duoWrapper">
+                    <div className="projectImageDuoWrapper">
+                        <Image className='meanwoodValleyImage' src={reactNativeApp} alt='Currency converter application' />
+                
+                        <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Currency converter application' />
+                    </div>
+
+                    <div className="projectTextWrapper duoTextWrapper">
+                        <Textbox 
+                            className='textProject textProjectRight' 
+                            headerClassName='projectTextBoxHeader'
+                            header='Mountain BIke Riders Club Mobile'
+                            text={textReactNative} 
+                        />
+                        <Icons 
+                            size='35'
+                            className='iconProjectLeft'
+                            classNameGitHub='iconSingleWrap'
+                            classNameLinkedin='hidden'
+                            classNameMail='hidden'
+                            classNameHTML='hidden'
+                            classNameCSS='hidden'
+                            classNameJS='hidden'
+                            classNameReact='hidden'
+                            classNameNPM='hidden'
+                            classNameTerm='hidden'
+                            classNameSass='hidden'
+                            classNameResp='hidden'
+                            classNameCV='hidden'
+                            hrefGithub='https://github.com/norahammenberg/MTB-React-Native-App'
+                        />
+                    </div>
                 </div>
             </div>
-
-            {/**Second project */}
-            <div className="theProjectWrapper duoWrapper">
-                <div className="projectImageDuoWrapper">
-                    <Image className='meanwoodValleyImage' src={reactNativeApp} alt='Currency converter application' />
-             
-                    <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Currency converter application' />
-                </div>
-
-                <div className="projectTextWrapper duoTextWrapper">
-                    <Textbox 
-                        className='textProject textProjectRight' 
-                        headerClassName='projectTextBoxHeader'
-                        header='Mountain BIke Riders Club Mobile'
-                        text={textReactNative} 
-                    />
-                    <Icons 
-                        size='35'
-                        className='iconProjectLeft'
-                        classNameGitHub='iconSingleWrap'
-                        classNameLinkedin='hidden'
-                        classNameMail='hidden'
-                        classNameHTML='hidden'
-                        classNameCSS='hidden'
-                        classNameJS='hidden'
-                        classNameReact='hidden'
-                        classNameNPM='hidden'
-                        classNameTerm='hidden'
-                        classNameSass='hidden'
-                        classNameResp='hidden'
-                        classNameCV='hidden'
-                        hrefGithub='https://github.com/norahammenberg/MTB-React-Native-App'
-                    />
-                </div>
-            </div>
-            
-
-
-
-
-
-
-
-
-
-
-            {/*<Projectbox 
-                backgroundWrapper='projectBoxWrapper backgroundLight' 
-                wrapperClassName='theProjectWrapper' 
-                header='React:'className='reactImage' 
-                textClassName='textProject textProjectLeft' 
-                src={currencyConverter} 
-                alt='An image of a React application creatied by Nora Hammenberg' 
-                //text={textReactNative} 
-            />
-
-            <Projectbox backgroundWrapper='projectBoxWrapper' 
-                wrapperClassName='theProjectWrapper' 
-                header='React Native:' 
-                className='projectImage order2' 
-                textClassName='textProject textProjectRight' 
-                src={reactNativeApp} 
-                alt='An image of a React Native application creatied by Nora Hammenberg' 
-                text={textReactNative} 
-    />*/}
         </div>
     );
 }

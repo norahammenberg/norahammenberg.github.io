@@ -1,45 +1,21 @@
-{/*import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/menu.scss';
 import Logo from './Logo';
-import { useRef, useState } from 'react';
-import About from '../Pages/About';
-function Menu(props) {
+import {  useState } from 'react';
+import { Squash as Hamburger} from 'hamburger-react';
+
+ function Menu() {
   //function for style on active state:
   let activeStyle = {
-    color: "#9C6654"
-  };  
-  const AboutRef = useRef(null);
-  const goToAbout = () => {
-    window.scrollTo({
-      top: AboutRef.current.offsetTop,
-      behavior: 'smooth',
-    });
- }
-
-  const AboutRef = useRef(null);
-  //collect data submitted by user to send up the parent: 
-  const handleKeyUp = (e) => {
-    
-      console.log("Menu, handleKeyUp()", AboutRef, goToAbout);
-      props.SendData(AboutRef)
-      
-     
-  };*/}
-  //collection data that should be sent to About.js
-
- /* const collectAbout = () => {
-    console.log('collectAbout()', );
-    console.log(sendAbout);
-  }
-  //creating a const to save the data:
-  const [sendAbout, setSendAbout] = useState(null);*/
-  
-  
-  
-   
+      color: "#9C6654"
+    };  
+  //const for hamburger menu 
+  const [isOpen, setOpen] = useState(false)
+  const [showMenu, setShowMenu] = useState (false);
+  const [newMobile, setNewMobile] = useState ([]);
   return (
-    /*<div className="menu">
-   
+    <div className="menu">
+    
        <nav className="navBar">
             <Logo />
             <ul className="nav">
@@ -56,7 +32,7 @@ function Menu(props) {
                   <NavLink 
                     className="navLink" 
                     style={({ isActive }) => isActive ? activeStyle : undefined}
-                    onClick={goToAbout}
+                    to='/page/about' 
                   >
                     About
                   </NavLink>
@@ -64,7 +40,7 @@ function Menu(props) {
                 <li>
                   <NavLink 
                     className="navLink" 
-                    to='/page/about' 
+                    to='/page/skills' 
                     style={({ isActive }) =>isActive ? activeStyle : undefined}
                   >
                     Skills
@@ -73,7 +49,7 @@ function Menu(props) {
                 <li>
                   <NavLink 
                     className="navLink" 
-                    to='/page/about' 
+                    to='/page/projects' 
                     style={({ isActive }) =>isActive ? activeStyle : undefined}
                   >
                     Projects
@@ -82,7 +58,7 @@ function Menu(props) {
                 <li>
                   <NavLink 
                     className="navLink" 
-                    to='/page/about' 
+                    to='/page/contact' 
                     style={({ isActive }) =>isActive ? activeStyle : undefined}
                   >
                     Contact
@@ -90,9 +66,93 @@ function Menu(props) {
                 </li>
             </ul>
         </nav> 
+        <div className="mobileMenu">
+          <Hamburger 
+            rounded
+            easing="ease-in"
+            color="#2D2C2B"
+            toggled={isOpen}
+            toggle={setOpen} 
+            onToggle={toggled => {
+              if (toggled) {
+                console.log('toggled')
+                console.log(showMenu)
+                setShowMenu(true);
+                setNewMobile ({
+                  animationName: 'mobileAnimOpen',
+                  animationDuration: '1s',
+                  animationFillMode: 'forwards'
+              });
+              }
+              else {
+                console.log('closed') 
+                console.log(showMenu)
+                setShowMenu(false);
+                setNewMobile ({
+                  animationName: 'mobileAnimClose',
+                  animationDuration: '0.8s',
+                  animationFillMode: 'both' 
+                });
 
+              }
+            }}
+          />
+        </div>
+        {showMenu && (
+                  <ul 
+                    className="mobileNav"
+                    style={newMobile}
+                  >
+                     <li className='mobileList'>
+                       <NavLink 
+                         className="navLink" 
+                         to='/' 
+                         style={({ isActive}) => isActive ? activeStyle : undefined}
+                       >
+                         Home
+                       </NavLink>
+                     </li>
+                     <li className='mobileList'>
+                       <NavLink 
+                         className="navLink" 
+                         style={({ isActive }) => isActive ? activeStyle : undefined}
+                         to='/page/about' 
+                       >
+                         About
+                       </NavLink>
+                     </li>
+                     <li className='mobileList'>
+                       <NavLink 
+                         className="navLink" 
+                         to='/page/skills' 
+                         style={({ isActive }) =>isActive ? activeStyle : undefined}
+                       >
+                         Skills
+                       </NavLink>
+                     </li>
+                     <li className='mobileList'>
+                       <NavLink 
+                         className="navLink" 
+                         to='/page/projects' 
+                         style={({ isActive }) =>isActive ? activeStyle : undefined}
+                       >
+                         Projects
+                       </NavLink>
+                     </li>
+                     <li className='mobileList'>
+                       <NavLink 
+                         className="navLink" 
+                         to='/page/contact' 
+                         style={({ isActive }) =>isActive ? activeStyle : undefined}
+                       >
+                         Contact
+                       </NavLink>
+                     </li>
+                 </ul>
+                 )}
     </div>
   );
 }
 
-export default Menu;*/
+export default Menu;
+

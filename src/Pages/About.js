@@ -1,10 +1,11 @@
-
 import Header from "../components/Header";
 import photoOfNora from '../images/norahammenbergorig.jpg'
 import Textbox from "../components/Textbox";
 import '../styles/about.scss';
 import Icons from "../components/Icons";
 import Image from "../components/Image";
+import Menu from "../components/Menu";
+
 
 
 
@@ -21,7 +22,8 @@ function About() {
 
     return(
          <div>
-             <div className='aboutWrapper'>
+            <Menu />
+            <div className='aboutWrapper'>
                  <div className='imagesAboutWrapper'>
                     <Image className='portrait' src={photoOfNora} alt='The creator of this website and the web developer this website is about.' />
                     </div>

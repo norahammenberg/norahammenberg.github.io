@@ -1,4 +1,8 @@
 @import '../App.scss';
+
+.mobileMenu{
+    display: none;
+}
 .menu {
     position: sticky;
     top: 0;
@@ -44,6 +48,7 @@ li a {
   
 }
 
+
 //media queries
 @media screen and (max-width: 1253px) {
     .navBar {
@@ -66,4 +71,52 @@ li a {
     }  
 }
 
-//make hamburger meny
+/////////////////// hamburger meny:
+.mobileNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    padding-right: 100%;
+    position: fixed;
+    background-color: rgba(237, 225, 174, 0.75);
+}
+.mobileList {
+    padding: 10px;
+}
+.mobileList a {
+    color: $primary-dark-colour;
+}
+@media screen and (max-width: 509px) {
+    .mobileMenu {
+        display: flex;
+        justify-content: flex-start;
+        position: sticky;
+        top: 0;
+        background-color: $primary-light-colour;
+        padding: 17px 0 17px 17px;
+    }  
+    .navBar {
+        display: none;
+    }
+}
+@media screen and (min-width: 509px) {
+    .mobileNav {
+        display: none;
+    }  
+}
+
+@keyframes mobileAnimOpen {
+    from {
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    to {transform: translateY(0px);}
+}
+@keyframes mobileAnimClose {
+    100% {transform: translateY(-50px)}
+    from {transform: translateY(0px);}
+    to {opacity: 0;}
+        
+}
+
+

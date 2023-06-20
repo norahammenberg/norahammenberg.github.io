@@ -44,29 +44,26 @@ body {
 /*Compnents*/
 /*Home*/
 .wrapper {
-    background-image: url("images/testigen.png");
+    background-image: url("images/bextest.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 20%;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 //media queries
-@media screen and (min-height: 942px) {
+/*@media screen and (max-width: 1279px) {
     .wrapper {
-        //padding-bottom: 26%;
+        background-image: url("images/mobilebackground.png");
     }
+        
 }
 
-@media screen and (max-width: 1253px) {
-    .wrapper {
-        //padding-bottom: 33%;
-    }
-}
 @media screen and (max-width: 900px) {
     .wrapper {
         background-image: url("images/mobilebackground.png");
-        //padding-bottom: 30%;
-        
+        //padding-bottom: 30%; 
     }
         
-}
+}*/

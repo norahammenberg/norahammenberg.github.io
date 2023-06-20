@@ -19,3 +19,10 @@
     color: $primary-dark-colour;
     margin-top: -20px;
 }
+
+@media screen and (max-width: 360px) {
+    .contactFooter {
+        padding-top: 30px;
+    }
+    
+}

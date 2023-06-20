@@ -2,9 +2,7 @@
 
 .aboutWrapper {
     @include flex;
-    margin: 60px;
-    padding-top: 140px;
-    margin-bottom: 140px;
+    margin: 40px 60px 0 60px;
 }
 .imagesAboutWrapper {
     width: 50%;
@@ -13,11 +11,9 @@
     width: 77%;
     border-radius: 50%;
     margin-left: 10%;
-    margin-top: 20px;
 }
 .textWrapper{
-    width: 50%;
-   
+    width: 50%;  
 }
 
 //media queries
@@ -32,21 +28,59 @@
 
 @media screen and (max-width: 1131px) {
     .portrait {
-        margin-top: 70px;
         width: 87%;
         margin-left: 1%;
     }
     
 }
 @media screen and (max-width: 986px) {
+    .portrait {
+        width: 115%;
+        
+    }
+    .textWrapper{
+        width: 62%;  
+        margin-left: 100px;
+    }
+    .textAbout {
+        font-size: 14px;
+    }  
+}
+@media screen and (max-width: 832px) {
     .aboutWrapper {
-        //padding-top: 80px;
+        display: block;
+        margin-top: 0;
+    }  
+    .imagesAboutWrapper {
+        margin: 0 auto ;
+        padding: 0 20px 0 20px;
+
     }
     .portrait {
-        margin-top: 140px;
-        width: 87%;
-        margin-left: 1%;
+        width: 100%;
     }
-
+    .aboutHeader {
+        text-align: center;
+    }
+    .textWrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+    .iconWrapper {
+        align-content: center;
+    }
+}
+@media screen and (max-width: 542px) {
+    .aboutHeader {
+        font-size: 22px;
+    }
+    .imagesAboutWrapper {
+        padding: 0;
+        width: 80%;
+    }
+    .aboutWrapper {
+        margin-top: 0;
+        
+    }
     
 }

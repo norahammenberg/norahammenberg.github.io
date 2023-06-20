@@ -1,7 +1,7 @@
 @import '../App.scss'; 
 //wrapper
 .skillsWrapper {
-    padding-top: 100px;
+    padding-top: 40px;
 }
 .iconWrapperSkills {
     margin: 20px 250px;
@@ -40,7 +40,7 @@
     padding-left: 25px;
 }
 .skillsRespPop {
-    padding-right: 350px;
+    padding-right: 100px;
 }
 
 //keyframes for amnimation.
@@ -56,5 +56,41 @@
     from {transform: translateY(-30px);
         color: #c57d89;}
     to {transform: translateY(0px);}
+    
+}
+
+//media queries
+@media screen and (max-width: 1299px) {
+    .iconWrapperSkills {
+        margin: 20px 150px;
+    }
+}
+@media screen and (max-width: 1116px) {
+    .iconWrapperSkills {
+        margin: 20px 80px;
+    }
+    
+}
+@media screen and (max-width: 997px) {
+    .iconWrapperSkills {
+        margin: 20px 50px;
+    }
+    .iconSingleWrapSkills {
+        margin: 50px;
+    }
+    
+}
+@media screen and (max-width: 660px) {
+    
+    .iconSingleWrapSkills {
+        margin: 40px;
+    }
+    
+}
+@media screen and (max-width: 505px) {
+    .iconWrapperSkills {
+        margin: 20px 5px;
+    }
+   
     
 }

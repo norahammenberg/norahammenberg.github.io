@@ -1,7 +1,7 @@
 @import '../App.scss'; 
 //wrapper
 .contactWrapper {
-    padding-top: 100px;
+    padding-top: 50px;
    
 }
 //main header
@@ -15,9 +15,22 @@
 .textContact {
     @include primary-paragraph-font;
     text-align: center;
-    padding: 60px 0 0 0 ;
+    padding: 20px 0 0 0 ;
 }
 .iconWrapperContact {
     text-align: center; 
     padding-bottom: 160px;
+}
+
+@media screen and (max-width: 986px) {
+    .contactWrapper {
+        padding-top: 60px;
+       
+    }
+}
+@media screen and (max-width: 542px) {
+    .iconWrapperContact {
+        padding-bottom: 170px;
+    }
+    
 }
