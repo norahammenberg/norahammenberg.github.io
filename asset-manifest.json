@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/norahammenberg/norahammenberg.github.io/static/css/main.1f784752.css",
-    "main.js": "/norahammenberg/norahammenberg.github.io/static/js/main.059dd93a.js",
+    "main.js": "/norahammenberg/norahammenberg.github.io/static/js/main.86a977a7.js",
     "static/js/787.2a9deff9.chunk.js": "/norahammenberg/norahammenberg.github.io/static/js/787.2a9deff9.chunk.js",
     "static/media/nora-hammenberg-portfolio-home.png": "/norahammenberg/norahammenberg.github.io/static/media/nora-hammenberg-portfolio-home.c220080f679cee9fa7df.png",
     "static/media/norahammenbergorig.jpg": "/norahammenberg/norahammenberg.github.io/static/media/norahammenbergorig.091d9e1cf9125035e6f9.jpg",
@@ -10,11 +10,11 @@
     "static/media/meanwoodvalleymtb.png": "/norahammenberg/norahammenberg.github.io/static/media/meanwoodvalleymtb.5419c174ed74ea193756.png",
     "index.html": "/norahammenberg/norahammenberg.github.io/index.html",
     "main.1f784752.css.map": "/norahammenberg/norahammenberg.github.io/static/css/main.1f784752.css.map",
-    "main.059dd93a.js.map": "/norahammenberg/norahammenberg.github.io/static/js/main.059dd93a.js.map",
+    "main.86a977a7.js.map": "/norahammenberg/norahammenberg.github.io/static/js/main.86a977a7.js.map",
     "787.2a9deff9.chunk.js.map": "/norahammenberg/norahammenberg.github.io/static/js/787.2a9deff9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f784752.css",
-    "static/js/main.059dd93a.js"
+    "static/js/main.86a977a7.js"
   ]
 }
