@@ -1,6 +1,7 @@
-import { NavLink } from 'react-router-dom';
 import '../styles/menu.scss';
+//component
 import Logo from './Logo';
+import { NavLink } from 'react-router-dom';
 import {  useState } from 'react';
 import { Squash as Hamburger} from 'hamburger-react';
 
@@ -9,13 +10,14 @@ import { Squash as Hamburger} from 'hamburger-react';
   let activeStyle = {
       color: "#9C6654"
     };  
+
   //const for hamburger menu 
   const [isOpen, setOpen] = useState(false)
   const [showMenu, setShowMenu] = useState (false);
   const [newMobile, setNewMobile] = useState ([]);
+
   return (
     <div className="menu">
-    
        <nav className="navBar">
             <Logo />
             <ul className="nav">
@@ -66,6 +68,7 @@ import { Squash as Hamburger} from 'hamburger-react';
                 </li>
             </ul>
         </nav> 
+
         <div className="mobileMenu">
           <Hamburger 
             rounded
@@ -93,66 +96,61 @@ import { Squash as Hamburger} from 'hamburger-react';
                   animationDuration: '0.8s',
                   animationFillMode: 'both' 
                 });
-
               }
             }}
           />
         </div>
         {showMenu && (
-                  <ul 
-                    className="mobileNav"
-                    style={newMobile}
-                  >
-                     <li className='mobileList'>
-                       <NavLink 
-                         className="navLink" 
-                         to='/' 
-                         style={({ isActive}) => isActive ? activeStyle : undefined}
-                       >
-                         Home
-                       </NavLink>
-                     </li>
-                     <li className='mobileList'>
-                       <NavLink 
-                         className="navLink" 
-                         style={({ isActive }) => isActive ? activeStyle : undefined}
-                         to='/page/about' 
-                       >
-                         About
-                       </NavLink>
-                     </li>
-                     <li className='mobileList'>
-                       <NavLink 
-                         className="navLink" 
-                         to='/page/skills' 
-                         style={({ isActive }) =>isActive ? activeStyle : undefined}
-                       >
-                         Skills
-                       </NavLink>
-                     </li>
-                     <li className='mobileList'>
-                       <NavLink 
-                         className="navLink" 
-                         to='/page/projects' 
-                         style={({ isActive }) =>isActive ? activeStyle : undefined}
-                       >
-                         Projects
-                       </NavLink>
-                     </li>
-                     <li className='mobileList'>
-                       <NavLink 
-                         className="navLink" 
-                         to='/page/contact' 
-                         style={({ isActive }) =>isActive ? activeStyle : undefined}
-                       >
-                         Contact
-                       </NavLink>
-                     </li>
-                 </ul>
-                 )}
+                  <ul className="mobileNav" style={newMobile}>
+                    <li className='mobileList'>
+                      <NavLink 
+                        className="navLink" 
+                        to='/' 
+                        style={({ isActive}) => isActive ? activeStyle : undefined}
+                      >
+                        Home
+                      </NavLink>
+                    </li>
+                    <li className='mobileList'>
+                      <NavLink 
+                        className="navLink" 
+                        style={({ isActive }) => isActive ? activeStyle : undefined}
+                        to='/page/about' 
+                      >
+                        About
+                      </NavLink>
+                    </li>
+                    <li className='mobileList'>
+                      <NavLink 
+                        className="navLink" 
+                        to='/page/skills' 
+                        style={({ isActive }) =>isActive ? activeStyle : undefined}
+                      >
+                        Skills
+                      </NavLink>
+                    </li>
+                    <li className='mobileList'>
+                      <NavLink 
+                        className="navLink" 
+                        to='/page/projects' 
+                        style={({ isActive }) =>isActive ? activeStyle : undefined}
+                      >
+                        Projects
+                      </NavLink>
+                    </li>
+                    <li className='mobileList'>
+                      <NavLink 
+                        className="navLink" 
+                        to='/page/contact' 
+                        style={({ isActive }) =>isActive ? activeStyle : undefined}
+                      >
+                        Contact
+                      </NavLink>
+                    </li>
+                </ul>
+        )}
     </div>
   );
 }
-
 export default Menu;
 

@@ -1,25 +1,21 @@
-import Header from "../components/Header";
-import photoOfNora from '../images/norahammenbergorig.jpg'
-import Textbox from "../components/Textbox";
 import '../styles/about.scss';
+import photoOfNora from '../images/norahammenbergorig.jpg'
+//Components
+import Header from "../components/Header";
+import Textbox from "../components/Textbox";
 import Icons from "../components/Icons";
 import Image from "../components/Image";
 import Menu from "../components/Menu";
 
-
-
-
 function About() {
 
-    const text =['My name is Nora Hammenberg. I am a happy and proactive aspiring Front-End Web Developer.',
+    const text =['My name is Nora Hammenberg. I am a happy and proactive front-end web developer with an art background based in Leeds, England.',
         <br/>,<br/>,
-        //'I am due to graduating in June with a Higher Education Diploma with specialisation in Informatics from University West – Sweden. With a broad skillset working in HTML, CSS, SASS, JavaScript, React.js, React Native, jQuery, PHP, MySQL, NPM, Node.js, Bootstrap, WordPress and more, I have a lot to bring alongside my dedication to learn and develop with in the field.',
-        //<br/>,<br/>,
-        'I am a highly driven, motivated and patient women wish can be proven through my experience setting up a small independent printmaking business from scratch in 2018. Where I delivered lithography courses and print collaborations with artists.',
+        'I am a driven, ambitious and creative developer with high aspirations. I enjoy building beautiful websites and applications.',
         <br/>,<br/>,
-        'I take pride in my curiosity and willingness to take on new challenges. Something I believe have been an important part throughout my years at University West. With no previews experience in web development, I quickly learned through asking questions and hard working. '//The logic thinking and problem-solving I bring with me from my printmaking background have come to be very useful. 
+        'In 2023 I graduated from University West, Sweden, programme Webmaster where I gained experience in both front-end and back-end development, web design and loads more. I am excited to take my skills with me for my new next step as a front-end developer. ',    
     ]  
-
+    
     return(
          <div>
             <Menu />
@@ -47,20 +43,12 @@ function About() {
                         classNameSass='hidden'
                         classNameResp='hidden'
                         classNameCV='iconSingleWrap iconCvWrap'
-
                         hrefGithub='https://github.com/norahammenberg'
                         hrefLinkedin='https://www.linkedin.com/in/nora-hammenberg/'
                         />
                 </div>
-             </div>
-             <div>
-                 
-             </div>
-       
+            </div>
          </div>
-             
-       
     );
 }
-
 export default About;

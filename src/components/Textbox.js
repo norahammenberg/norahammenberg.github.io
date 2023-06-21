@@ -1,6 +1,5 @@
 
 import '../styles/textbox.scss';
-
 function Textbox(props) {
     return(
         <div className='textBoxWrapper'>
@@ -8,7 +7,5 @@ function Textbox(props) {
             <p className={props.className}>{props.text}</p>
         </div>
     );
-
 }
-
 export default Textbox;

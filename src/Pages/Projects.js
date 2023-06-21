@@ -1,34 +1,33 @@
-import Header from "../components/Header";
+import '../styles/project.scss';
+//Images
 import reactNativeApp from '../images/meanwoodvalleymtb.png';
 import meanwoodRider from '../images/meanwoodrider.png';
 import currencyConverter from '../images/currencyconverter.png';
-import '../styles/project.scss';
+//Components
+import Header from "../components/Header";
 import Image from "../components/Image";
 import Textbox from "../components/Textbox";
 import Icons from "../components/Icons";
 import Menu from "../components/Menu";
 
-//<a href="https://www.flaticon.com/free-icons/iphone" title="iphone icons">Iphone icons created by amoghdesign - Flaticon</a>
 function Projects() {
 
-    const textReact =['A currency converter web application made React.js. This web application uses the REST API Currency Data API that provieds real-time exhange rates. This web application help you convert different currency',
+    const textReact =['A currency converter web application made React.js. This web application uses the REST API Currency Data API that provides real-time exchange rates. ',
     <br/>,<br/>,
-    'While building the application I learned how to use React.js, RESTful API ',
+    'While building the application I practice designing a website from scratch by applying UX. I learned how to use React.js and a RESTful API.',
     ]
 
-    const textReactNative =['A currency converter web application made React.js. This web application uses the REST API Currency Data API that provieds real-time exhange rates. This web application help you convert different currency',
+    const textReactNative =['A mobile application made with React Native, and an API made with Node.js. This full CRUD mobile application can display all rider information, adding, editing and deleting riders from the database',
     <br/>,<br/>,
-    'This web application help you convert different currency',
-    <br/>,<br/>,
-    'While building the application I learned how to use React.js, RESTful API '
+    'While building the application I learned to create a NoSQL database in MongoDB, an API using Node.js, and using React Native. ',
     ]
+
     return(
         <div>
             <Menu />
-        
             <div className="projectWrapper">
-                
                 <Header className='projectHeader' text='MY PROJECTS' />
+
                 {/**First project */}
                 <div className="theProjectWrapper">
                     <div className="projectTextWrapper">
@@ -55,25 +54,22 @@ function Projects() {
                             hrefGithub='https://github.com/norahammenberg/currency-converter'
                         />
                     </div>
-
                     <div className="projectImageWrapper">
-                        <Image className='reactImage' src={currencyConverter} alt='Currency converter application' />
+                        <Image className='reactImage' src={currencyConverter} alt='' />
                     </div>
                 </div>
 
                 {/**Second project */}
                 <div className="theProjectWrapper duoWrapper">
                     <div className="projectImageDuoWrapper">
-                        <Image className='meanwoodValleyImage' src={reactNativeApp} alt='Currency converter application' />
-                
-                        <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Currency converter application' />
+                        <Image className='meanwoodValleyImage' src={reactNativeApp} alt='' />
+                        <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Displaying fetching data from a API.' />
                     </div>
-
                     <div className="projectTextWrapper duoTextWrapper">
                         <Textbox 
                             className='textProject textProjectRight' 
                             headerClassName='projectTextBoxHeader'
-                            header='Mountain BIke Riders Club Mobile'
+                            header='Meanwood Valley MTB Riders Club'
                             text={textReactNative} 
                         />
                         <Icons 
@@ -99,5 +95,4 @@ function Projects() {
         </div>
     );
 }
-
 export default Projects

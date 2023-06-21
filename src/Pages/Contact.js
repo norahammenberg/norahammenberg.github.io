@@ -1,4 +1,5 @@
 import '../styles/contact.scss';
+//Components
 import Header from "../components/Header";
 import Footer from '../components/Footer';
 import Textbox from '../components/Textbox';

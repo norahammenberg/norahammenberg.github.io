@@ -1,8 +1,9 @@
 import '../App.scss';
+import '../styles/icons.scss';
 import { Link } from 'react-router-dom';
 import { FaLinkedin,FaReact, FaGithubSquare, FaEnvelope, FaHtml5, FaCss3Alt, FaNpm, FaTerminal, FaSass } from 'react-icons/fa';
-import '../styles/icons.scss';
 import { DiJavascript1, DiResponsive } from "react-icons/di";
+
 function Icons(props) {
     return(
         <div className={props.className}>
@@ -40,12 +41,9 @@ function Icons(props) {
                 <DiResponsive size={props.size} style={{color: '#EDE1AE'}} />
             </div>
             <div className={props.classNameCV}> 
-                <Link  className='cvButton' to=".../public/norahammenbergCV.pdf" target="_blank" download>Download My CV</Link>
+                <Link  className='cvButton' to="/norahammenbergCV.pdf" target="_blank" download>Download My CV</Link>
             </div>
-        </div>
-        
+        </div>  
     );
-
 }
-
 export default Icons; 

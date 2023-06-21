@@ -1,8 +1,7 @@
 import '../App.scss';
-import '../styles/homeref.scss';
+//Components
 import Homeheader from '../components/Homeheader';
 import Menu from '../components/Menu';
-import '../styles/menu.scss';
 
 function Home() {
  
@@ -15,5 +14,4 @@ function Home() {
       </div>
   );
 }
-
 export default Home;

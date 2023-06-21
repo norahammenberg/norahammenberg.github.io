@@ -79,6 +79,7 @@ li a {
     padding-right: 100%;
     position: fixed;
     background-color: rgba(237, 225, 174, 0.75);
+    
 }
 .mobileList {
     padding: 10px;
@@ -89,8 +90,7 @@ li a {
 @media screen and (max-width: 509px) {
     .mobileMenu {
         display: flex;
-        justify-content: flex-start;
-        position: sticky;
+        justify-content: flex-start;  
         top: 0;
         background-color: $primary-light-colour;
         padding: 17px 0 17px 17px;

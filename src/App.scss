@@ -44,26 +44,13 @@ body {
 /*Compnents*/
 /*Home*/
 .wrapper {
-    background-image: url("images/bextest.png");
+    background-image: url("images/nora-hammenberg-portfolio-home.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;  
 }
 
-//media queries
-/*@media screen and (max-width: 1279px) {
-    .wrapper {
-        background-image: url("images/mobilebackground.png");
-    }
-        
-}
 
-@media screen and (max-width: 900px) {
-    .wrapper {
-        background-image: url("images/mobilebackground.png");
-        //padding-bottom: 30%; 
-    }
-        
-}*/

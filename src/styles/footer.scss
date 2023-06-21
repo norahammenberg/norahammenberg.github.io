@@ -19,6 +19,18 @@
     color: $primary-dark-colour;
     margin-top: -20px;
 }
+.footerParaThanks {
+    @include primary-heading-font;
+    font-weight: 100;
+    text-align: center;
+    color: $primary-dark-colour;
+    margin-top: -10px;
+    font-size: 10px;
+}
+.link {
+    text-decoration: none;
+    color: $primary-dark-colour;
+}
 
 @media screen and (max-width: 360px) {
     .contactFooter {

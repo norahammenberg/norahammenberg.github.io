@@ -9,12 +9,8 @@ import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 
-
 function App() {
-  //useNavigate to send te user to the right page when using the button. 
-    //const navigate = useNavigate();
-  //scroll to element: 
- 
+
   return (
     <div className="App">
       
@@ -29,5 +25,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

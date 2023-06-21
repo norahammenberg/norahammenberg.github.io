@@ -15,11 +15,10 @@
 .textContact {
     @include primary-paragraph-font;
     text-align: center;
-    padding: 20px 0 0 0 ;
 }
 .iconWrapperContact {
     text-align: center; 
-    padding-bottom: 160px;
+    padding-bottom: 180px;
 }
 
 @media screen and (max-width: 986px) {

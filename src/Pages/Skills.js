@@ -1,13 +1,17 @@
 import '../styles/skills.scss';
-import Header from "../components/Header";
 import { FaReact, FaHtml5, FaCss3Alt, FaNpm, FaTerminal, FaSass } from 'react-icons/fa';
 import { DiJavascript1, DiResponsive } from "react-icons/di";
-//import Icons from '../components/Icons';
 import { useState } from 'react';
+//components
 import Menu from '../components/Menu';
+import Header from "../components/Header";
 
 function Skills() {
-    
+    ///////////////////
+    //Work in progress, as I learn and develop I will optimize this code.
+    //////////////////
+
+    //Variables dor showing hidden text on mouse over. 
     const [isShownHTML, setIsShownHTML] = useState(false);
     const [isShownCSS, setIsShownCSS] = useState(false);
     const [isShownJS, setIsShownJS] = useState(false);
@@ -17,7 +21,7 @@ function Skills() {
     const [isShownSass, setIsShownSass] = useState(false);
     const [isShownResp, setIsShownResp] = useState(false);
     
-    //use state to set new style on mouse enter.
+    //usestate to set new style onmouseenter.
     const [newStyle, setNewStyle] = useState([]);
     const [newCSS, setNewCSS] = useState([]);
     const [newJS, setNewJS] = useState([]);
@@ -26,8 +30,6 @@ function Skills() {
     const [newTerm, setNewTerm] = useState([]);
     const [newSass, setNewSass] = useState([]);
     const [newResp, setNewResp] = useState([]);
-
-    
 
     const onMouseEnterHTML = () => {
         setIsShownHTML(true);
@@ -174,14 +176,13 @@ function Skills() {
     
     return( 
         <div>
-             <Menu />
+            <Menu />
             <div className='skillsWrapper'>
-               
                 <Header className='skillsHeader' text='SKILLS' />
                 <div className='iconWrapper iconWrapperSkills'>
+                    
                     <div className='iconSingleWrapSkills'> 
                         <FaHtml5 
-                            //have to make a function because it re render and loopoing, by making a function this don't happen
                             onMouseEnter={onMouseEnterHTML}
                             onMouseLeave={onMouseLeaveHTML}
                             size='80' 
@@ -206,8 +207,8 @@ function Skills() {
                                 <p>CSS</p>
                             </div>
                         )}
-                        
                     </div>
+                    
                     <div className='iconSingleWrapSkills'> 
                         <DiJavascript1 
                             onMouseEnter={onMouseEnterJS}
