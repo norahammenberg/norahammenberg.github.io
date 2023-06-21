@@ -55,15 +55,15 @@ function Projects() {
                         />
                     </div>
                     <div className="projectImageWrapper">
-                        <Image className='reactImage' src={currencyConverter} alt='' />
+                        <Image className='reactImage' src={currencyConverter} alt='The landingpage of the currency converter web application' />
                     </div>
                 </div>
 
                 {/**Second project */}
                 <div className="theProjectWrapper duoWrapper">
                     <div className="projectImageDuoWrapper">
-                        <Image className='meanwoodValleyImage' src={reactNativeApp} alt='' />
-                        <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Displaying fetching data from a API.' />
+                        <Image className='meanwoodValleyImage' src={reactNativeApp} alt='Landingpage of Meanwood Valley MTB mobile app.' />
+                        <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Displaying data fetched from a API.' />
                     </div>
                     <div className="projectTextWrapper duoTextWrapper">
                         <Textbox 

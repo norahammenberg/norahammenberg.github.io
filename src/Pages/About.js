@@ -15,13 +15,13 @@ function About() {
         <br/>,<br/>,
         'In 2023 I graduated from University West, Sweden, programme Webmaster where I gained experience in both front-end and back-end development, web design and loads more. I am excited to take my skills with me for my new next step as a front-end developer. ',    
     ]  
-    
+
     return(
          <div>
             <Menu />
             <div className='aboutWrapper'>
                  <div className='imagesAboutWrapper'>
-                    <Image className='portrait' src={photoOfNora} alt='The creator of this website and the web developer this website is about.' />
+                    <Image className='portrait' src={photoOfNora} alt='The creator and web developer of this website' />
                     </div>
                 <div className='textWrapper'>
                     <Header className='aboutHeader' text='ABOUT ME' />

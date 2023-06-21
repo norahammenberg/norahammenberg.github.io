@@ -8,40 +8,40 @@ function Icons(props) {
     return(
         <div className={props.className}>
             <div className={props.classNameGitHub}> 
-                <a href={props.hrefGithub}><FaGithubSquare size={props.size} style={{color: '#EDE1AE'}} /></a>
+                <a href={props.hrefGithub}><FaGithubSquare size={props.size} style={{color: '#EDE1AE'}} alt='Visit Github.' /></a>
             </div>
             <div className={props.classNameLinkedin}> 
-                <a href={props.hrefLinkedin}><FaLinkedin size={props.size} style={{color: '#EDE1AE'}} /></a>
+                <a href={props.hrefLinkedin}><FaLinkedin size={props.size} style={{color: '#EDE1AE'}} alt='Linkedin profile.' /></a>
             </div>
             <div className={props.classNameMail}> 
-                <a href='mailto:nora_kerstin@hotmail.com'><FaEnvelope size={props.size} style={{color: '#EDE1AE'}} /></a>
+                <a href='mailto:nora_kerstin@hotmail.com'><FaEnvelope size={props.size} style={{color: '#EDE1AE'}} alt='Contact me through email.' /></a>
             </div>
             <div className={props.classNameHTML}> 
-                <FaHtml5 size={props.size} style={{color: '#EDE1AE'}} />
+                <FaHtml5 size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameCSS}> 
-                <FaCss3Alt size={props.size} style={{color: '#EDE1AE'}} />
+                <FaCss3Alt size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameJS}> 
-                <DiJavascript1 size={props.size} style={{color: '#EDE1AE'}} />
+                <DiJavascript1 size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameReact}> 
-                <FaReact size={props.size} style={{color: '#EDE1AE'}} />
+                <FaReact size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameNPM}> 
-                <FaNpm size={props.size} style={{color: '#EDE1AE'}} />
+                <FaNpm size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameTerm}> 
-                <FaTerminal size={props.size} style={{color: '#EDE1AE'}} />
+                <FaTerminal size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameSass}> 
-                <FaSass size={props.size} style={{color: '#EDE1AE'}} />
+                <FaSass size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameResp}> 
-                <DiResponsive size={props.size} style={{color: '#EDE1AE'}} />
+                <DiResponsive size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameCV}> 
-                <Link  className='cvButton' to="/norahammenbergCV.pdf" target="_blank" download>Download My CV</Link>
+                <Link  className='cvButton' to="./norahammenbergCV.pdf" target="_blank" download>Download My CV</Link>
             </div>
         </div>  
     );
