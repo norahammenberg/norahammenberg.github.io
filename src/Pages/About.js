@@ -27,6 +27,7 @@ function About() {
                     <Header className='aboutHeader' text='ABOUT ME' />
                     <Textbox className='textAbout' 
                         text={text} 
+                        classNameA='hidden'
                     />
                     <Icons 
                         size='35'

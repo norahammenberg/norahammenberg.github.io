@@ -1,6 +1,5 @@
 import '../App.scss';
 import '../styles/icons.scss';
-import { Link } from 'react-router-dom';
 import { FaLinkedin,FaReact, FaGithubSquare, FaEnvelope, FaHtml5, FaCss3Alt, FaNpm, FaTerminal, FaSass } from 'react-icons/fa';
 import { DiJavascript1, DiResponsive } from "react-icons/di";
 
@@ -43,6 +42,7 @@ function Icons(props) {
             <div className={props.classNameCV}> 
                 <a className='cvButton' href="./NoraHammenbergCV.pdf" target="_blank" download>Download My CV</a>
             </div>
+            
         </div>  
     );
 }

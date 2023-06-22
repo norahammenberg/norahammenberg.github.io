@@ -19,7 +19,17 @@
     margin-bottom: 40px;
     font-weight: 100;
 }
-
+.VisitLeft {
+    @include primary-heading-font;
+    font-size: 18px;
+    color: $primary-light-colour;
+    margin-bottom: 40px;
+    font-weight: 100;
+    //line-height: 50px;
+ }
+ .VistLeft a:hover{
+     color: #6E622F
+ }
 //Images
 .projectImageWrapper {
     width: 50%;
@@ -90,6 +100,9 @@
     .textProject {
         font-size: 14px;
     }
+    .iconProjectLeft {
+        margin-left: -11px;
+    }
 }
 @media screen and (max-width: 832px) {
     .theProjectWrapper {
@@ -139,6 +152,18 @@
 @media screen and (max-width: 542px) {
     .theProjectWrapper {
         padding: 1px 40px;
+    }
+    .projectImageWrapper {
+        padding: 0;
+    }
+    .iconProjectRight {
+        padding: 0;
+    }
+    .projectImageDuoWrapper {
+        padding: 0;
+    }
+    .iconProjectLeft {
+        margin: 0;
     }
     
 }

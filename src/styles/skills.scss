@@ -2,17 +2,21 @@
 //wrapper
 .skillsWrapper {
     padding-top: 40px;
+   
 }
 .iconWrapperSkills {
     margin: 20px 250px;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
+    
 }
 .iconSingleWrapSkills {
     margin: 60px;
     color: $primary-light-colour;
     cursor: pointer;
+     
 }
+
 //main header
 .skillsHeader {
     @include primary-heading-font;

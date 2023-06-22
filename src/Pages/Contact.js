@@ -16,6 +16,7 @@ function Contact() {
                 <Textbox 
                     className='textContact'
                     text='coming soon' 
+                    classNameA='hidden'
                 />
                 <Icons 
                     size='35'

@@ -26,7 +26,7 @@
 }
 li a {
     @include primary-heading-font;
-    color: $primary-dark-colour;
+    color: $primary-dark-colour; 
   }
   
   li a:hover {
@@ -37,6 +37,7 @@ li a {
 .navLink {
     text-decoration: none;
     margin: 0 20px 0 20px;
+   
 }
 
 .imagesWrapper {
@@ -79,7 +80,6 @@ li a {
     padding-right: 100%;
     position: fixed;
     background-color: rgba(237, 225, 174, 0.75);
-    
 }
 .mobileList {
     padding: 10px;

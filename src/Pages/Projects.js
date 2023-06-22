@@ -36,9 +36,11 @@ function Projects() {
                             headerClassName='projectTextBoxHeader textProjectLeft'
                             header='Currency Converter' 
                             text={textReact} 
+                            classNameA='VisitLeft'
                         />
                         <Icons 
                             size='35'
+                            className='projectIconWraper'
                             classNameGitHub='iconProjectRight'
                             classNameLinkedin='hidden'
                             classNameMail='hidden'
@@ -71,6 +73,7 @@ function Projects() {
                             headerClassName='projectTextBoxHeader'
                             header='Meanwood Valley MTB Riders Club'
                             text={textReactNative} 
+                            classNameA='hidden'
                         />
                         <Icons 
                             size='35'
