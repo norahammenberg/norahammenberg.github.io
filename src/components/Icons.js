@@ -42,7 +42,6 @@ function Icons(props) {
             <div className={props.classNameCV}> 
                 <a className='cvButton' href="./NoraHammenbergCV.pdf" target="_blank" download>Download My CV</a>
             </div>
-            
         </div>  
     );
 }
