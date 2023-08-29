@@ -14,7 +14,8 @@
     margin: 60px;
     color: $primary-light-colour;
     cursor: pointer;
-     
+    // adding positin relative so that icons in side can be position absolut to this element the parent.
+    position: relative;
 }
 
 //main header
@@ -25,26 +26,16 @@
     margin-bottom: 40px;
     font-weight: 100;
 }
+//.icon {
+    //position: absolute;
+//}
 
 //all mouse over event;
 .skillsPop {
-    @include flex;
-    margin-top: -40px;
-}
-.skillsHTMLPop {
-    padding-left: 22px;
-}
-.skillsCSSPop {
-    padding-left: 26px;
-}
-.skillsReactPop {
-    padding-left: 9px;
-}
-.skillsNPMPop {
-    padding-left: 25px;
-}
-.skillsRespPop {
-    padding-right: 100px;
+    margin-top: -20px;
+    //to position the text absolut in side the child. to centeraline. 
+    position: absolute;
+    width: 100%;
 }
 
 //keyframes for amnimation.
@@ -79,6 +70,7 @@
     .iconWrapperSkills {
         margin: 20px 50px;
     }
+    //Remove?
     .iconSingleWrapSkills {
         margin: 50px;
     }
