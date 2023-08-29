@@ -11,7 +11,7 @@ function Skills() {
     //Work in progress, as I learn and develop I will optimize this code.
     //////////////////
 
-    //Variables dor showing hidden text on mouse over. 
+    //Variables for showing hidden text on mouse over. 
     const [isShownHTML, setIsShownHTML] = useState(false);
     const [isShownCSS, setIsShownCSS] = useState(false);
     const [isShownJS, setIsShownJS] = useState(false);
@@ -298,4 +298,3 @@ function Skills() {
     );
 }
 export default Skills
-

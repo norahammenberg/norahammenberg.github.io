@@ -148,6 +148,12 @@
     .projectTextBoxHeader {
         padding-right: 0;
     }
+    .iconProjectRight {
+        padding: 0;
+    }
+    .iconProjectLeft {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 542px) {
     .theProjectWrapper {
@@ -156,14 +162,7 @@
     .projectImageWrapper {
         padding: 0;
     }
-    .iconProjectRight {
-        padding: 0;
-    }
     .projectImageDuoWrapper {
         padding: 0;
     }
-    .iconProjectLeft {
-        margin: 0;
-    }
-    
 }
