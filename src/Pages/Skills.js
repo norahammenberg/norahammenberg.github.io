@@ -23,170 +23,166 @@ function Skills() {
     
     //usestate to set new style onmouseenter.
     const [newStyle, setNewStyle] = useState([]);
-    const [newCSS, setNewCSS] = useState([]);
-    const [newJS, setNewJS] = useState([]);
-    const [newReact, setNewReact] = useState([]);
-    const [newNPM, setNewNPM] = useState([]);
-    const [newTerm, setNewTerm] = useState([]);
-    const [newSass, setNewSass] = useState([]);
-    const [newResp, setNewResp] = useState([]);
 
-    const onMouseEnterHTML = () => {
-        setIsShownHTML(true);
+    const whenMouseEnter = () => {
         setNewStyle ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
+                animationName: 'htmlAnmiUp',
+                animationDuration: '0.5s',
+                animationFillMode: 'forwards'
+            });      
     }
 
-    const onMouseLeaveHTML = () => {
+    
+    const onMouseEnter = (event) => {
+        const elementID = event.target.id;
+        console.log('ID:' + elementID);
+
+        if (elementID === 'html') {
+            setIsShownHTML(true);
+            whenMouseEnter(); 
+        }
+        else if (elementID === 'css') {
+            setIsShownCSS(true);
+            whenMouseEnter(); 
+        }
+        else if (elementID === 'js') {
+            setIsShownJS(true);
+            whenMouseEnter(); 
+        }
+        else if (elementID === 'react') {
+            setIsShownReact(true);
+            whenMouseEnter(); 
+        }
+        else if (elementID === 'npm') {
+            setIsShownNPM(true);
+
+            whenMouseEnter(); 
+        }
+        else if (elementID === 'term') {
+            setIsShownTerm(true);
+            whenMouseEnter(); 
+        }
+        else if (elementID === 'sass') {
+            setIsShownSass(true);
+            whenMouseEnter(); 
+        }
+        else if (elementID === 'resp') {
+            setIsShownResp(true);
+            whenMouseEnter(); 
+        }
+    }
+
+    const onMouseLeave = (event) => {
+        const elementID = event.target.id;
+        console.log('ID:' + elementID);
         setIsShownHTML(false);
+        setIsShownCSS(false);
+        setIsShownJS(false);
+        setIsShownReact(false);
+        setIsShownNPM(false);
+        setIsShownTerm(false);
+        setIsShownSass(false);
+        setIsShownResp(false);
         setNewStyle ({
             animationName: 'htmlAnmiDown',
             animationDuration: '0.5s',
             animationFillMode: 'forwards'
         }); 
     }
-    
-    const onMouseEnterCSS = () => {
-        setIsShownCSS(true);
-        setNewCSS ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
 
-    const onMouseLeaveCSS = () => {
-        setIsShownCSS(false);
-        setNewCSS ({
-            animationName: 'htmlAnmiDown',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-    
-    const onMouseEnterJS = () => {
-        setIsShownJS(true);
-        setNewJS ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
+    const iconArray = [
+        {
+            icon: FaHtml5,
+            id: 'html',
+            showing: isShownHTML,
+            text: 'HTML',
+            style: newStyle
+        },
+        {
+            icon: FaCss3Alt,
+            id: 'css',
+            showing: isShownCSS,
+            text: 'CSS',
+            style: newStyle
+        },
+        {
+            icon: DiJavascript1,
+            id: 'js', 
+            showing: isShownJS,
+            text: 'javaScript',
+            style: newStyle
+        },
+        {
+            icon: FaReact,
+            id: 'react', 
+            showing: isShownReact,
+            text: 'React.js',
+            style: newStyle
+        },
+        {
+            icon: FaNpm,
+            id: 'npm', 
+            showing: isShownNPM,
+            text: 'NPM',
+            style: newStyle
+        },
+        {
+            icon: FaTerminal,
+            id: 'term', 
+            showing: isShownTerm,
+            text: 'Terminal',
+            style: newStyle
+        },
+        {
+            icon: FaSass,
+            id: 'sass', 
+            showing: isShownSass,
+            text: 'Sass',
+            style: newStyle
+        },
+        {
+            icon: DiResponsive,
+            id: 'resp', 
+            showing: isShownResp,
+            text: 'Responsive',
+            style: newStyle
+        },
+    ];
+    const iconList = iconArray.map(theIcon => 
+            <div className='iconSingleWrapSkills'>
+                <theIcon.icon
+                    key={theIcon.id}
+                    id = {theIcon.id}
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                    size='80' 
+                    style={theIcon.showing  && theIcon.style} 
+                />
+                {theIcon.showing && (
+                    <div className='skillsHeader skillsPop skillsHTMLPop' style={{ position: 'absolute'}}>
+                        <p>{theIcon.text}</p>
+                    </div>
+                )}
+            </div>
+        );
 
-    const onMouseLeaveJS = () => {
-        setIsShownJS(false);
-        setNewJS ({
-            animationName: 'htmlAnmiDown',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-
-    const onMouseEnterReact = () => {
-        setIsShownReact(true);
-        setNewReact ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-
-    const onMouseLeaveReact = () => {
-        setIsShownReact(false);
-        setNewReact ({
-            animationName: 'htmlAnmiDown',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-    const onMouseEnterNPM = () => {
-        setIsShownNPM(true);
-        setNewNPM ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-
-    const onMouseLeaveNPM = () => {
-        setIsShownNPM(false);
-        setNewNPM ({
-            animationName: 'htmlAnmiDown',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-
-    const onMouseEnterTerm = () => {
-        setIsShownTerm(true);
-        setNewTerm ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-
-    const onMouseLeaveTerm = () => {
-        setIsShownTerm(false);
-        setNewTerm ({
-            animationName: 'htmlAnmiDown',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-    
-    const onMouseEnterSass = () => {
-        setIsShownSass(true);
-        setNewSass ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-
-    const onMouseLeaveRSass = () => {
-        setIsShownSass(false);
-        setNewSass ({
-            animationName: 'htmlAnmiDown',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-    
-    const onMouseEnterResp = () => {
-        setIsShownResp(true);
-        setNewResp ({
-            animationName: 'htmlAnmiUp',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-
-    const onMouseLeaveResp = () => {
-        setIsShownResp(false);
-        setNewResp ({
-            animationName: 'htmlAnmiDown',
-            animationDuration: '0.5s',
-            animationFillMode: 'forwards'
-        }); 
-    }
-    
     return( 
         <div>
             <Menu />
+            
             <div className='skillsWrapper'>
                 <Header className='skillsHeader' text='SKILLS' />
                 <div className='iconWrapper iconWrapperSkills'>
+                    {iconList}
                     
-                    <div className='iconSingleWrapSkills'> 
-                        <FaHtml5 
-                            onMouseEnter={onMouseEnterHTML}
-                            onMouseLeave={onMouseLeaveHTML}
+                    
+                    {/*<div className='iconSingleWrapSkills'> 
+                        <FaHtml5
+                            id='html' 
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newStyle} 
+                            style={isShownHTML && newStyle} 
                         />
                         {isShownHTML && (
                             <div className='skillsHeader skillsPop skillsHTMLPop' style={{ position: 'absolute'}}>
@@ -197,10 +193,11 @@ function Skills() {
 
                     <div className='iconSingleWrapSkills'> 
                         <FaCss3Alt 
-                        onMouseEnter={onMouseEnterCSS}
-                            onMouseLeave={onMouseLeaveCSS}
+                            id='css'
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newCSS} 
+                            style={isShownCSS && newStyle} 
                         />
                         {isShownCSS && (
                             <div className='skillsHeader skillsPop skillsCSSPop' style={{ position: 'absolute'}}>
@@ -211,10 +208,11 @@ function Skills() {
                     
                     <div className='iconSingleWrapSkills'> 
                         <DiJavascript1 
-                            onMouseEnter={onMouseEnterJS}
-                            onMouseLeave={onMouseLeaveJS}
+                            id='js'
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newJS} 
+                            style={isShownJS && newStyle} 
                         />
                         {isShownJS && (
                             <div className='skillsHeader skillsPop' style={{ position: 'absolute'}}>
@@ -225,10 +223,11 @@ function Skills() {
 
                     <div className='iconSingleWrapSkills'> 
                         <FaReact
-                            onMouseEnter={onMouseEnterReact}
-                            onMouseLeave={onMouseLeaveReact}
+                            id='react'
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newReact} 
+                            style={isShownReact && newStyle}
                         />
                         {isShownReact && (
                             <div className='skillsHeader skillsPop skillsReactPop' style={{ position: 'absolute'}}>
@@ -239,10 +238,11 @@ function Skills() {
 
                     <div className='iconSingleWrapSkills'> 
                         <FaNpm 
-                            onMouseEnter={onMouseEnterNPM}
-                            onMouseLeave={onMouseLeaveNPM}
+                            id='npm'
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newNPM} 
+                            style={isShownNPM && newStyle} 
                         />
                         {isShownNPM && (
                             <div className='skillsHeader skillsPop skillsNPMPop' style={{ position: 'absolute'}}>
@@ -253,10 +253,11 @@ function Skills() {
 
                     <div className='iconSingleWrapSkills'> 
                         <FaTerminal 
-                            onMouseEnter={onMouseEnterTerm}
-                            onMouseLeave={onMouseLeaveTerm}
+                            id='term'
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newTerm} 
+                            style={isShownTerm && newStyle} 
                         />
                         {isShownTerm && (
                             <div className='skillsHeader skillsPop skillsReactPop' style={{ position: 'absolute'}}>
@@ -266,11 +267,12 @@ function Skills() {
                     </div>
 
                     <div className='iconSingleWrapSkills'> 
-                        <FaSass 
-                            onMouseEnter={onMouseEnterSass}
-                            onMouseLeave={onMouseLeaveRSass}
+                        <FaSass
+                            id='sass' 
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newSass} 
+                            style={isShownSass && newStyle}
                         />
                         {isShownSass && (
                             <div className='skillsHeader skillsPop skillsHTMLPop' style={{ position: 'absolute'}}>
@@ -281,20 +283,23 @@ function Skills() {
 
                     <div className='iconSingleWrapSkills'> 
                         <DiResponsive 
-                            onMouseEnter={onMouseEnterResp}
-                            onMouseLeave={onMouseLeaveResp}
+                            id='resp'
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             size='80' 
-                            style={newResp} 
+                            style={isShownResp && newStyle}
                         />
                         {isShownResp && (
                             <div className='skillsHeader skillsPop skillsRespPop' style={{ position: 'absolute'}}>
                                 <p>Responsive</p>
                             </div>
                         )}
-                    </div>
+                        </div>*/}
                 </div>  
             </div>
         </div>
     );
 }
 export default Skills
+
+
