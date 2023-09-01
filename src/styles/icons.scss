@@ -3,9 +3,10 @@
     @include flex;
     margin-left: -20px;
 }
-//.iconSingleWrap {
-  //  margin: 20px;
-//}
+.iconSingleWrap {
+    margin: 20px;
+}
+
 .cvButton {
     @include primary-paragraph-font;
     background-color: $primary-dark-colour;
