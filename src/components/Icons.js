@@ -40,7 +40,7 @@ function Icons(props) {
                 <DiResponsive size={props.size} style={{color: '#EDE1AE'}} alt='' />
             </div>
             <div className={props.classNameCV}> 
-                <a className='cvButton' href="./Nora-Hammenberg-CV.pdf" target="_blank" download>Download My CV</a>
+                <a className='cvButton' href="./NoraHammenbergCV.pdf" target="_blank" download>Download My CV</a>
             </div>
         </div>  
     );
