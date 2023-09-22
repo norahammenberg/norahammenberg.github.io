@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.784b732a.css",
-    "main.js": "/static/js/main.116cb895.js",
+    "main.js": "/static/js/main.dedfee1a.js",
     "static/js/787.2a9deff9.chunk.js": "/static/js/787.2a9deff9.chunk.js",
     "static/media/nora-hammenberg-portfolio-home.png": "/static/media/nora-hammenberg-portfolio-home.c220080f679cee9fa7df.png",
     "static/media/norahammenbergorig.jpg": "/static/media/norahammenbergorig.091d9e1cf9125035e6f9.jpg",
@@ -11,11 +11,11 @@
     "static/media/meanwoodvalleymtb.png": "/static/media/meanwoodvalleymtb.5419c174ed74ea193756.png",
     "index.html": "/index.html",
     "main.784b732a.css.map": "/static/css/main.784b732a.css.map",
-    "main.116cb895.js.map": "/static/js/main.116cb895.js.map",
+    "main.dedfee1a.js.map": "/static/js/main.dedfee1a.js.map",
     "787.2a9deff9.chunk.js.map": "/static/js/787.2a9deff9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.784b732a.css",
-    "static/js/main.116cb895.js"
+    "static/js/main.dedfee1a.js"
   ]
 }
