@@ -23,6 +23,11 @@ function Projects() {
     'While building the application I learned to create a NoSQL database in MongoDB, an API using Node.js, and using React Native. ',
     ];
 
+    const textQuote = ['This quote generator is build using Javascript, HTML and CSS. The application fetches quotes from an API and randomly display them.',
+    <br/>,<br/>,
+    'While woking on this projectI learned to use JavaScript the fetch data from an API and randomley displaying a quote from an arrey.',
+    ];
+
     const textBootstrap = ['Stone Tree Press is a front-end only website that I build using Bootstrap, Sass and with a focus on responsive web development.',
     <br/>,<br/>,
     'While woking on this projectI learned about CSS-frameworks and CSS-preprocessor.',
@@ -103,6 +108,40 @@ function Projects() {
                 </div>
 
                 {/**Third project */}
+                <div className="theProjectWrapper">
+                    <div className="projectTextWrapper">
+                        <Textbox 
+                            className='textProject textProjectLeft'
+                            headerClassName='projectTextBoxHeader textProjectLeft'
+                            header='Quote Generator' 
+                            text={textQuote} 
+                            classNameA='VisitLeft'
+                            href='https://norahammenberg.github.io/quote-generator/'
+                        />
+                        <Icons 
+                            size='35'
+                            className='projectIconWraper'
+                            classNameGitHub='iconProjectRight'
+                            classNameLinkedin='hidden'
+                            classNameMail='hidden'
+                            classNameHTML='hidden'
+                            classNameCSS='hidden'
+                            classNameJS='hidden'
+                            classNameReact='hidden'
+                            classNameNPM='hidden'
+                            classNameTerm='hidden'
+                            classNameSass='hidden'
+                            classNameResp='hidden'
+                            classNameCV='hidden'
+                            hrefGithub='https://github.com/norahammenberg/quote-generator/'
+                        />
+                    </div>
+                    <div className="projectImageWrapper">
+                        <Image className='reactImage' src={bootstrap} alt='The landing page of a project where I was working with Bootstrap and SASS.' />
+                    </div>
+                </div>
+
+                {/**Forth project */}
                 <div className="theProjectWrapper">
                     <div className="projectTextWrapper">
                         <Textbox 
