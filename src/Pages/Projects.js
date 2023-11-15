@@ -4,6 +4,7 @@ import reactNativeApp from '../images/meanwoodvalleymtb.png';
 import meanwoodRider from '../images/meanwoodrider.png';
 import currencyConverter from '../images/currencyconverter.png';
 import bootstrap from '../images/bootstrap-sass-project.png';
+import weride from '../images/where-should-we-hike.png';
 //Components
 import Header from "../components/Header";
 import Image from "../components/Image";
@@ -12,6 +13,11 @@ import Icons from "../components/Icons";
 import Menu from "../components/Menu";
 
 function Projects() {
+
+    const whereShouldWeRide = ['An application med with HTML, CSS and JavaScript. With the help of a MApLibre Ican display an map for the user to pick a location to find mountain bike trails to ride. The application uses the REST API "Trail API" that provides the user with trails. ',
+    <br/>,<br/>,
+    'While building the application I practice JavaScript and the use of maps in web applications. I learned how to use JavaScript ot fetch information from a REST API and how to access GPS coordinates from an map to use in an API call.',
+    ];
 
     const textReact = ['A currency converter web application made React.js. This web application uses the REST API Currency Data API that provides real-time exchange rates. ',
     <br/>,<br/>,
@@ -40,6 +46,40 @@ function Projects() {
                 <Header className='projectHeader' text='MY PROJECTS' />
 
                 {/**First project */}
+
+                <div className="theProjectWrapper">
+                    <div className="projectImageWrapper imageLeft">
+                        <Image className='reactImage' src={weride} alt='The landing page of a project where I was working with Bootstrap and SASS.' />
+                    </div>
+                    <div className="projectTextWrapper">
+                        <Textbox 
+                            className='textProject textProjectRight'
+                            headerClassName='projectTextBoxHeader textProjectRight' 
+                            header='Where Should We Ride?' 
+                            text={whereShouldWeRide} 
+                            classNameA='VisitLeft'
+                            href='https://norahammenberg.github.io/currency-converter/'
+                        />
+                        <Icons 
+                            size='35'
+                            className='projectIconWraper'
+                            classNameGitHub='iconProjectLeft'
+                            classNameLinkedin='hidden'
+                            classNameMail='hidden'
+                            classNameHTML='hidden'
+                            classNameCSS='hidden'
+                            classNameJS='hidden'
+                            classNameReact='hidden'
+                            classNameNPM='hidden'
+                            classNameTerm='hidden'
+                            classNameSass='hidden'
+                            classNameResp='hidden'
+                            classNameCV='hidden'
+                            hrefGithub='https://github.com/norahammenberg/currency-converter'
+                        />
+                    </div>
+                </div>
+
                 <div className="theProjectWrapper">
                     <div className="projectTextWrapper">
                         <Textbox 
@@ -89,8 +129,8 @@ function Projects() {
                         />
                         <Icons 
                             size='35'
-                            className='iconProjectLeft'
-                            classNameGitHub='iconSingleWrap'
+                            className='projectIconWraper'
+                            classNameGitHub='iconProjectLeft'
                             classNameLinkedin='hidden'
                             classNameMail='hidden'
                             classNameHTML='hidden'
@@ -140,40 +180,7 @@ function Projects() {
                         <Image className='reactImage' src={bootstrap} alt='The landing page of a project where I was working with Bootstrap and SASS.' />
                     </div>
                 </div>
-
-                {/**Forth project */}
-                <div className="theProjectWrapper">
-                    <div className="projectTextWrapper">
-                        <Textbox 
-                            className='textProject textProjectLeft'
-                            headerClassName='projectTextBoxHeader textProjectLeft'
-                            header='Stone Tree Press' 
-                            text={textBootstrap} 
-                            classNameA='VisitLeft'
-                            href='https://norahammenberg.github.io/Bootstrap-project/'
-                        />
-                        <Icons 
-                            size='35'
-                            className='projectIconWraper'
-                            classNameGitHub='iconProjectRight'
-                            classNameLinkedin='hidden'
-                            classNameMail='hidden'
-                            classNameHTML='hidden'
-                            classNameCSS='hidden'
-                            classNameJS='hidden'
-                            classNameReact='hidden'
-                            classNameNPM='hidden'
-                            classNameTerm='hidden'
-                            classNameSass='hidden'
-                            classNameResp='hidden'
-                            classNameCV='hidden'
-                            hrefGithub='https://github.com/norahammenberg/Bootstrap-project'
-                        />
-                    </div>
-                    <div className="projectImageWrapper">
-                        <Image className='reactImage' src={bootstrap} alt='The landing page of a project where I was working with Bootstrap and SASS.' />
-                    </div>
-                </div>
+               
             </div>
         </div>
     );

@@ -28,8 +28,9 @@
     justify-content: flex-end;
 }
 .iconProjectLeft {
-    margin-left: -20px;
+    @include flex;
 }
+
 .hidden {
     display: none;
 }
@@ -47,6 +48,10 @@
         padding: 10px;
         font-size: 12px;
     }
+    .iconProjectLeft{
+       padding-left: 10px;
+    }
+
   }
     
 @media screen and (max-width: 927px) {
@@ -56,12 +61,20 @@
     .iconCvWrap {
         margin-top: 18px;
     }
-    
 }
 @media screen and (max-width: 832px) {
     .iconWrapper {
         justify-content:  center;
         padding: 20px 0 40px 0;
+    }
+    .iconProjectRight{
+        justify-content: center;
+        padding-right: 0px;
+    }
+    .iconProjectLeft {
+        padding-left: 0px;
+        justify-content: center;
+        margin: 20px;
     }
 }
 @media screen and (max-width: 542px) {
@@ -71,12 +84,5 @@
     
 }
 
-@media screen and (max-width: 832px) {
-    .iconProjectRight{
-        justify-content: center;
-    }
-    .iconProjectLeft {
-        text-align: center;
-    }
-    
-}
+
+

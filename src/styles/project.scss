@@ -34,6 +34,7 @@
 .projectImageWrapper {
     width: 50%;
     padding-right: 20px;
+    padding-top: 2%;
 }
 .projectImageDuoWrapper {
     //@include flex;
@@ -50,6 +51,7 @@
 .reactImage {
     width: 100%; 
 }
+
 
 //Projet header
 .projectTextBoxHeader {
@@ -100,9 +102,7 @@
     .textProject {
         font-size: 14px;
     }
-    .iconProjectLeft {
-        margin-left: -11px;
-    }
+    
 }
 @media screen and (max-width: 832px) {
     .theProjectWrapper {
@@ -135,11 +135,18 @@
         text-align: center;
         padding-right: 0;
     }
+    .textProjectRight {
+        text-align: center;
+        padding-right: 0;
+    }
     .duoTextWrapper {
         text-align: center;
         padding-right: 0;
     }
     .projectImageDuoWrapper {
+        order: 2;
+    }
+    .imageLeft {
         order: 2;
     }
     .theProjectWrapper {
@@ -156,14 +163,9 @@
     .projectImageWrapper {
         padding: 0;
     }
-    .iconProjectRight {
-        padding: 0;
-    }
     .projectImageDuoWrapper {
         padding: 0;
     }
-    .iconProjectLeft {
-        margin: 0;
-    }
+  
     
 }
