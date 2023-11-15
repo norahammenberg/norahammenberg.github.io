@@ -58,7 +58,7 @@ function Projects() {
                             header='Where Should We Ride?' 
                             text={whereShouldWeRide} 
                             classNameA='VisitLeft'
-                            href='https://norahammenberg.github.io/currency-converter/'
+                            href='https://norahammenberg.github.io/where-should-we-ride-live/
                         />
                         <Icons 
                             size='35'
@@ -75,7 +75,7 @@ function Projects() {
                             classNameSass='hidden'
                             classNameResp='hidden'
                             classNameCV='hidden'
-                            hrefGithub='https://github.com/norahammenberg/currency-converter'
+                            hrefGithub='https://github.com/norahammenberg/where-should-we-ride'
                         />
                     </div>
                 </div>
