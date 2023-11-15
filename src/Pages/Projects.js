@@ -58,7 +58,7 @@ function Projects() {
                             header='Where Should We Ride?' 
                             text={whereShouldWeRide} 
                             classNameA='VisitLeft'
-                            href='https://norahammenberg.github.io/where-should-we-ride-live/
+                            href='https://norahammenberg.github.io/where-should-we-ride-live/'
                         />
                         <Icons 
                             size='35'
