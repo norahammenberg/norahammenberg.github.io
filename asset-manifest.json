@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.784b732a.css",
-    "main.js": "/static/js/main.dedfee1a.js",
+    "main.css": "/static/css/main.413a8a62.css",
+    "main.js": "/static/js/main.115cf1f0.js",
     "static/js/787.2a9deff9.chunk.js": "/static/js/787.2a9deff9.chunk.js",
     "static/media/nora-hammenberg-portfolio-home.png": "/static/media/nora-hammenberg-portfolio-home.c220080f679cee9fa7df.png",
     "static/media/norahammenbergorig.jpg": "/static/media/norahammenbergorig.091d9e1cf9125035e6f9.jpg",
     "static/media/bootstrap-sass-project.png": "/static/media/bootstrap-sass-project.5470037c0c93a62bdd76.png",
     "static/media/currencyconverter.png": "/static/media/currencyconverter.36d3238d1bf2189664d5.png",
+    "static/media/where-should-we-hike.png": "/static/media/where-should-we-hike.362ac728acc81a0341f2.png",
     "static/media/meanwoodrider.png": "/static/media/meanwoodrider.295e35b1894723db4d64.png",
     "static/media/meanwoodvalleymtb.png": "/static/media/meanwoodvalleymtb.5419c174ed74ea193756.png",
     "index.html": "/index.html",
-    "main.784b732a.css.map": "/static/css/main.784b732a.css.map",
-    "main.dedfee1a.js.map": "/static/js/main.dedfee1a.js.map",
+    "main.413a8a62.css.map": "/static/css/main.413a8a62.css.map",
+    "main.115cf1f0.js.map": "/static/js/main.115cf1f0.js.map",
     "787.2a9deff9.chunk.js.map": "/static/js/787.2a9deff9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.784b732a.css",
-    "static/js/main.dedfee1a.js"
+    "static/css/main.413a8a62.css",
+    "static/js/main.115cf1f0.js"
   ]
 }
