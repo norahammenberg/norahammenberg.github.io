@@ -14,9 +14,9 @@ import Menu from "../components/Menu";
 
 function Projects() {
 
-    const whereShouldWeRide = ['An application med with HTML, CSS and JavaScript. With the help of a MApLibre Ican display an map for the user to pick a location to find mountain bike trails to ride. The application uses the REST API "Trail API" that provides the user with trails. ',
+    const whereShouldWeRide = ['An application developed with HTML, CSS and JavaScript. With the help of a MapLibre I can display a map for the user to pick a location to find mountain bike trails to ride. The application uses the REST API "Trail API" which provides the user with trails. ',
     <br/>,<br/>,
-    'While building the application I practice JavaScript and the use of maps in web applications. I learned how to use JavaScript ot fetch information from a REST API and how to access GPS coordinates from an map to use in an API call.',
+    'While building the application I practice JavaScript and the use of maps in web applications. I learned how to use JavaScript to fetch information from a REST API and how to access GPS coordinates from a map to use in an API call.',
     ];
 
     const textReact = ['A currency converter web application made React.js. This web application uses the REST API Currency Data API that provides real-time exchange rates. ',
@@ -24,20 +24,21 @@ function Projects() {
     'While building the application I practice designing a website from scratch by applying UX. I learned how to use React.js and a RESTful API.',
     ];
 
-    const textReactNative = ['A mobile application made with React Native, and an API made with Node.js. This full CRUD mobile application can display all rider information, adding, editing and deleting riders from the database',
+    const textReactNative = ['A mobile application made with React Native, and an API made with Node.js. This full CRUD mobile application can display all rider information, add, editing and delete riders from the database',
     <br/>,<br/>,
     'While building the application I learned to create a NoSQL database in MongoDB, an API using Node.js, and using React Native. ',
     ];
 
-    const textQuote = ['This quote generator is build using Javascript, HTML and CSS. The application fetches quotes from an API and randomly display them.',
+    const textQuote = ['This quote generator is built using Javascript, HTML and CSS. The application fetches quotes from an API and randomly displays them.',
     <br/>,<br/>,
-    'While woking on this projectI learned to use JavaScript the fetch data from an API and randomley displaying a quote from an arrey.',
+    'While working on this project I learned to use JavaScript the fetch data from an API and randomly displaying a quote from an array.',
     ];
 
     const textBootstrap = ['Stone Tree Press is a front-end only website that I build using Bootstrap, Sass and with a focus on responsive web development.',
     <br/>,<br/>,
-    'While woking on this projectI learned about CSS-frameworks and CSS-preprocessor.',
+    'While working on this project I learned about CSS frameworks and CSS-pre-processor.',
     ];
+
 
     return(
         <div>
