@@ -90,20 +90,20 @@
 }
 
 @media screen and (max-width: 1131px) {
+    .theProjectWrapper {
+        padding-bottom: 20px;
+    }
     .projectImageWrapper {
         padding-top: 60px;
     }
     .duoTextWrapper {
         margin-top: -40px;
     }
-    
-}
-@media screen and (max-width: 986px) {
     .textProject {
         font-size: 14px;
     }
-    
 }
+
 @media screen and (max-width: 832px) {
     .theProjectWrapper {
         flex-direction: column;
