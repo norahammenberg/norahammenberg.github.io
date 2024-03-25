@@ -1,76 +1,85 @@
 @import '../App.scss';
 
+
 .alignHeader {
-    @include flex;
-    justify-content: center
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin-top: 25vh;
+    
+   
 }
 .headerOne {
-    @include primary-heading-font;
+    @include primary-heading-font; 
     font-weight: 100;
-    font-size: 54px;
-    margin-left: -189px;
-    margin-top: 150px;
-}
-.headerLightColour {
+    font-size: 48px;
     color: $primary-light-colour;
-}
-.headerTwo {
-    @include primary-heading-font;
-    font-size: 54px;
-    font-weight: 100;
-    margin-top: -60px;
-    margin-left: 120px;
+    margin-bottom: -40px;
+    //background-color: $primary-dark-colour;
 }
 
+.headerTwo { 
+    @include primary-heading-font;
+    font-size: 48px;
+    font-weight: 100;
+    color: $primary-light-colour;
+    padding: 0 0 15px 110px;
+    //-color: $primary-dark-colour
+}
+.slideToLeft {
+    animation-name: slideToLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards ;
+}
+.slideToLeftFar {
+    animation-name: slideToLeftFar;
+    animation-duration: 2s;
+    animation-fill-mode: forwards ;
+}
+
+
+@keyframes slideToLeft {
+    //from {  transition: font-size 48px;}
+    to {     transform: translateX(-67vh);
+            //transform: scale(0.1);
+        }
+  }
+  @keyframes slideToLeftFar {
+    to {    transform: translateX(-74.5vh);  }
+  }
+  
 
 //media quaries
 @media screen and (max-width: 986px) {
-    .headerOne {
+    .headerOne, .headerTwo {
         font-size: 34px;
-        margin-left: -125px;
+        margin-bottom: -40px;
+    }   
+    .alignHeader {
+        top: 25vh;
+        //left: 35vh
     }
-    .headerTwo {
-        font-size: 34px;
-        margin-top: -30px;
-        margin-left: 80px;
-        padding-bottom: 60px;
-    }
-        
+
 }
 @media screen and (max-width: 851px) {
-    .headerLightColour {
-        color: $primary-dark-colour;
-    }
-    .headerOne {
-        
-        background-color: rgba(255, 255, 255, 0.30);
-        padding: 0 20px 0px 20px;
-    }
-    .headerTwo {
-        background-color: rgba(255, 255, 255, 0.30);
-        padding: 0 20px 0 20px;
-        margin-top: -23px;
-    }       
-}
-@media screen and (max-width: 426px) {
     .alignHeader {
-        display:table;
-        margin: 0 auto;
-
-       
+       //left: 15vh
+    }     
+}
+@media screen and (max-width: 520px) {
+    .alignHeader {
+        //left: 1vh; 
     }
     .headerOne {
         font-weight: 200;
-        text-align: center;
-        margin-left: 0;
+        //padding: 0 0 0 10px;
+        margin-bottom: -10px;
     }
     
     .headerTwo {
         font-weight: 200;
-        text-align: center;
-        margin-left: 0px;
-        
-        padding: 0 0px 0 20px;
+        //padding: 0 0 0 10px;
     }
 }
 

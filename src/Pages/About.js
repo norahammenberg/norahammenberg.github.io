@@ -1,13 +1,12 @@
-import '../styles/about.scss';
-import photoOfNora from '../images/norahammenbergorig.jpg'
-//Components
 import Header from "../components/Header";
+import photoOfNora from '../images/norahammenbergorig.jpg'
 import Textbox from "../components/Textbox";
+import '../styles/about.scss';
 import Icons from "../components/Icons";
 import Image from "../components/Image";
-import Menu from "../components/Menu";
+import { forwardRef } from "react";
 
-function About() {
+const About = forwardRef((props, ref) => {
 
     const text =['My name is Nora Hammenberg. I am a happy and proactive front-end web developer with an art background based in Leeds, England.',
         <br/>,<br/>,
@@ -17,39 +16,38 @@ function About() {
     ]  
 
     return(
-         <div>
-            <Menu />
-            <div className='aboutWrapper'>
-                 <div className='imagesAboutWrapper'>
-                    <Image className='portrait' src={photoOfNora} alt='The creator and web developer of this website' />
-                    </div>
-                <div className='textWrapper'>
-                    <Header className='aboutHeader' text='ABOUT ME' />
-                    <Textbox className='textAbout' 
-                        text={text} 
-                        classNameA='hidden'
-                    />
-                    <Icons 
-                        size='35'
-                        className='iconWrapper'
-                        classNameGitHub='iconSingleWrap'
-                        classNameLinkedin='iconSingleWrap'
-                        classNameMail='iconSingleWrap'
-                        classNameHTML='hidden'
-                        classNameCSS='hidden'
-                        classNameJS='hidden'
-                        classNameReact='hidden'
-                        classNameNPM='hidden'
-                        classNameTerm='hidden'
-                        classNameSass='hidden'
-                        classNameResp='hidden'
-                        classNameCV='iconSingleWrap iconCvWrap'
-                        hrefGithub='https://github.com/norahammenberg'
-                        hrefLinkedin='https://www.linkedin.com/in/nora-hammenberg/'
-                        />
-                </div>
+        <div className='aboutWrapper' ref={ref} {...props}>
+            <div className='imagesAboutWrapper'>
+                <Image className='portrait' src={photoOfNora} alt='The creator of this website and the web developer this website is about.' />
             </div>
-         </div>
+            <div className='textWrapper'>
+                <Header className='aboutHeader' text='ABOUT ME' />
+                <Textbox className='textAbout' 
+                    text={text} 
+                />
+                <Icons 
+                    size='35'
+                    className='iconWrapper'
+                    classNameGitHub='iconSingleWrap'
+                    classNameLinkedin='iconSingleWrap'
+                    classNameMail='iconSingleWrap'
+                    classNameHTML='hidden'
+                    classNameCSS='hidden'
+                    classNameJS='hidden'
+                    classNameReact='hidden'
+                    classNameNPM='hidden'
+                    classNameTerm='hidden'
+                    classNameSass='hidden'
+                    classNameResp='hidden'
+                    classNameCV='iconSingleWrap iconCvWrap'
+
+                    hrefGithub='https://github.com/norahammenberg'
+                    hrefLinkedin='https://www.linkedin.com/in/nora-hammenberg/'
+                    />
+            </div>
+        </div>
+              
     );
-}
+});
+
 export default About;

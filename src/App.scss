@@ -7,9 +7,10 @@
 }
 
 /*Varibles*/
-
-$primary-dark-colour: #2D2C2B;
-$primary-light-colour: #EDE1AE;
+$primary-dark-colour: #1d1d1d;
+//$primary-dark-colour: #2D2C2B;
+//$primary-light-colour: #EDE1AE;
+$primary-light-colour: #ececec;
 
 /*Mixins*/
 @mixin primary-heading-font {
@@ -39,18 +40,9 @@ $primary-light-colour: #EDE1AE;
 }
 body {
     background-color: $primary-dark-colour;
-    
+ 
 }
-/*Compnents*/
-/*Home*/
+
 .wrapper {
-    background-image: url("images/nora-hammenberg-portfolio-home.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;  
+    min-height: 100vh;
 }
-
-
