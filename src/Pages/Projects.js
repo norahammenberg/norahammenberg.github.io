@@ -2,9 +2,10 @@ import '../styles/project.scss';
 //Images
 import reactNativeApp from '../images/meanwoodvalleymtb.png';
 import meanwoodRider from '../images/meanwoodrider.png';
-import currencyConverter from '../images/currencyconverter.png';
-import bootstrap from '../images/bootstrap-sass-project.png';
-import weride from '../images/where-should-we-hike.png';
+import currencyConverter from '../images/currency-converter.png';
+import stoneTreePress from '../images/stone-tree-press.png';
+import weride from '../images/where-should-we-ride.png';
+import generator from '../images/quote-generator.png';
 //Components
 import Header from "../components/Header";
 import Image from "../components/Image";
@@ -34,10 +35,11 @@ function Projects() {
     'While working on this project I learned to use JavaScript the fetch data from an API and randomly displaying a quote from an array.',
     ];
 
-    const textBootstrap = ['Stone Tree Press is a front-end only website that I build using Bootstrap, Sass and with a focus on responsive web development.',
+    const textStoneTreePress = ['Stone Tree Press is a front-end only website that I build using Bootstrap, Sass and with a focus on responsive web development.',
     <br/>,<br/>,
     'While working on this project I learned about CSS frameworks and CSS-pre-processor.',
     ];
+
 
 
     return(
@@ -113,20 +115,19 @@ function Projects() {
                         <Image className='reactImage' src={currencyConverter} alt='The landingpage of the currency converter web application' />
                     </div>
                 </div>
-
-                {/**Second project */}
-                <div className="theProjectWrapper duoWrapper">
-                    <div className="projectImageDuoWrapper">
-                        <Image className='meanwoodValleyImage' src={reactNativeApp} alt='Landingpage of Meanwood Valley MTB mobile app.' />
-                        <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Displaying data fetched from a API.' />
+                
+                <div className="theProjectWrapper">
+                    <div className="projectImageWrapper imageLeft">
+                        <Image className='reactImage ' src={generator} alt='' />
                     </div>
-                    <div className="projectTextWrapper duoTextWrapper">
+                    <div className="projectTextWrapper">
                         <Textbox 
-                            className='textProject textProjectRight' 
-                            headerClassName='projectTextBoxHeader'
-                            header='Meanwood Valley MTB Riders Club'
-                            text={textReactNative} 
-                            classNameA='hidden'
+                            className='textProject textProjectRight'
+                            headerClassName='projectTextBoxHeader textProjectRight'
+                            header='Quote Generator' 
+                            text={textQuote} 
+                            classNameA='VisitLeft'
+                            href='https://norahammenberg.github.io/quote-generator/'
                         />
                         <Icons 
                             size='35'
@@ -143,21 +144,22 @@ function Projects() {
                             classNameSass='hidden'
                             classNameResp='hidden'
                             classNameCV='hidden'
-                            hrefGithub='https://github.com/norahammenberg/MTB-React-Native-App'
+                            hrefGithub='https://github.com/norahammenberg/quote-generator/'
                         />
                     </div>
                 </div>
 
-                {/**Third project */}
-                <div className="theProjectWrapper">
-                    <div className="projectTextWrapper">
+
+
+                {/**Second project */}
+                <div className="theProjectWrapper duoWrapper">
+                    <div className="projectTextWrapper duoTextWrapper">
                         <Textbox 
                             className='textProject textProjectLeft'
                             headerClassName='projectTextBoxHeader textProjectLeft'
-                            header='Quote Generator' 
-                            text={textQuote} 
-                            classNameA='VisitLeft'
-                            href='https://norahammenberg.github.io/quote-generator/'
+                            header='Meanwood Valley MTB Riders Club'
+                            text={textReactNative} 
+                            classNameA='hidden'
                         />
                         <Icons 
                             size='35'
@@ -174,11 +176,46 @@ function Projects() {
                             classNameSass='hidden'
                             classNameResp='hidden'
                             classNameCV='hidden'
-                            hrefGithub='https://github.com/norahammenberg/quote-generator/'
+                            hrefGithub='https://github.com/norahammenberg/MTB-React-Native-App'
                         />
                     </div>
-                    <div className="projectImageWrapper">
-                        <Image className='reactImage' src={bootstrap} alt='The landing page of a project where I was working with Bootstrap and SASS.' />
+                    <div className="projectImageDuoWrapper">
+                        <Image className='meanwoodValleyImage' src={reactNativeApp} alt='Landingpage of Meanwood Valley MTB mobile app.' />
+                        <Image className='meanwoodValleyrider' src={meanwoodRider} alt='Displaying data fetched from a API.' />
+                    </div>
+                </div>
+
+                {/**Third project */}
+                <div className="theProjectWrapper">
+                    <div className="projectImageWrapper imageLeft">
+                        <Image className='reactImage' src={stoneTreePress} alt='The landing page of a project where I was working with Bootstrap and SASS.' />
+                    </div>
+                    <div className="projectTextWrapper">
+                        <Textbox 
+                            className='textProject textProjectRight'
+                            headerClassName='projectTextBoxHeader textProjectRight'
+                            header='Stone Tree Press' 
+                            text={textStoneTreePress} 
+                            classNameA='VisitLeft'
+                            href='https://norahammenberg.github.io/Bootstrap-project/'
+                        />
+                        <Icons 
+                            size='35'
+                            className='projectIconWraper'
+                            classNameGitHub='iconProjectLeft'
+                            classNameLinkedin='hidden'
+                            classNameMail='hidden'
+                            classNameHTML='hidden'
+                            classNameCSS='hidden'
+                            classNameJS='hidden'
+                            classNameReact='hidden'
+                            classNameNPM='hidden'
+                            classNameTerm='hidden'
+                            classNameSass='hidden'
+                            classNameResp='hidden'
+                            classNameCV='hidden'
+                            hrefGithub='https://github.com/norahammenberg/Bootstrap-project'
+                        />
                     </div>
                 </div>
                

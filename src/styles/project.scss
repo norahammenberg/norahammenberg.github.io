@@ -34,7 +34,7 @@
 .projectImageWrapper {
     width: 50%;
     padding-right: 20px;
-    padding-top: 2%;
+    margin: auto;
 }
 .projectImageDuoWrapper {
     //@include flex;
@@ -42,7 +42,7 @@
     padding-left: 20px;
     padding-right: 40px;
 }
-.meanwoodValleyImage {
+.meanwoodValleyImage  {
     width: 50%;
 }
 .meanwoodValleyrider {
@@ -50,6 +50,7 @@
 }
 .reactImage {
     width: 100%; 
+    border-radius: 20px;
 }
 
 
@@ -60,6 +61,7 @@
     padding-right: 40px;
     font-weight: 100;
     letter-spacing: 6px;
+    font-size: 26px;
 }
 
 //Paragraphs
@@ -72,7 +74,7 @@
 }
 .textProjectLeft {
     text-align: right;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 .duoTextWrapper{
     margin-top: 50px;
